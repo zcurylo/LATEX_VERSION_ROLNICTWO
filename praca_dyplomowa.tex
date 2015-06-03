@@ -1,0 +1,112 @@
+\documentclass[12pt,twoside]{report} % 12 - font size 
+%\usepackage[hyphens]{url} % to have line breaks in urls
+\def\UrlBreaks{\do\/\do37}
+%\usepackage[breaklinks]{hyperref}
+%\usepackage{breakurl} % to have hoply line breaks
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[T1, hyphens]{url}
+\usepackage[english, polish]{babel}
+%\usepackage[numbers]{natbib} %for bubliograpgy
+\usepackage{graphicx} %to have fancy drawing
+\usepackage{float}
+\usepackage{amsmath} % to render equations
+\graphicspath{ {images/} } % to specify where images are stored 
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm, bindingoffset=6mm]{geometry} % to specify a proper page formatting 
+\usepackage{fancyhdr} % to have headers and footers 
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Systemy nawigacji satelitarnej w rolnictwie precyzyjnym}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{Rozdział \thechapter}
+\fancyfoot[CO,RE]{Zbigniew Witold Curyło}
+\renewcommand{\headrulewidth}{2pt} % to have a fat line above
+\renewcommand{\footrulewidth}{1pt} % to have simple line in the bottom 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[backend=biber, sorting=nyt, style=numeric]{biblatex}
+\urlstyle{sf}
+\usepackage[document]{ragged2e} % to have justify option 
+%\bibliographystyle{apalike}
+\addbibresource{references.bib}
+\linespread{1.2}
+
+
+
+\title{Systemy nawigacji satelitarnej w rolnictwie precyzyjnym}
+%	{Systemy nawigacji satelitarnej w rolnictwie precyzyjnym}\\
+%	{Satellite navigation systems in precision agriculture}\\
+%	{\large Szko\l{}a G\l{}\'o{}wna Gospodarstwa Wiejskiego w Warszawie. Wydzia\l{} Rolnictwa i Biologii}\\
+%	%{\includegraphics{university.jpg}}
+%}
+\author{Zbigniew Witold Curyło}
+\date{July 2015}
+
+
+\pagenumbering{roman}
+
+\begin{document} \sloppy
+
+\input{titlepage}
+
+\chapter*{}
+		Oświadczam, że pracę napisałem samodzielnie i wyrażam zgodę na udostępnienie pracy w bibliotece.
+		Egzemplarz niniejszy jest zgodny z załączoną wersją elektroniczną.\\*[1cm]
+		%\vspace*{2cm}[H]
+		......................... \hfill ..............................................\\*
+		\hspace*{0.5cm} ( data ) \hfill ( podpis autora pracy ) \hspace*{0.5cm}\\* 
+		\vfill
+		\noindent Praca została przygotowana pod moim kierunkiem. Treść jest zgodna z tytułem.\\*[2mm]
+		Oceniam ją jako .......................................\\*[1cm]
+		%\vspace*{3cm}[H]
+		......................... \hfill ..............................................\\
+		\hspace*{0.5cm} ( data ) \hfill ( podpis promotora pracy ) \hspace*{2mm}\\			
+ 		\vfill
+\chapter*{Dedykacja}
+\justify
+Pracę tę dedykuję wszystkim poległym w obronie Ojczyzny przed najeźdźcami\\ z Niemiec i Rosji Sowieckiej.
+\textbf{\textit{Cześć ich pamięci!}}
+\chapter*{Podziękowania}
+Dziekuję rodzicom i bratu za udzielone wsparcie.\\Dziękuję promotorowi za wyrozumiałość i cierpliwość.
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+%\setcounter{page}{0}
+
+\chapter{Wstęp}
+\input{chapters/Chapter01_Introduction}
+
+\chapter{Systemy nawigacyjne}
+\input{chapters/Chapter02_NavigationSystems}
+
+\chapter{Algorytmy sterowania}
+\input{chapters/Chapter03_StearingAlgorithms}
+
+\chapter{Aktualne badania}
+\input{chapters/Chapter04_CurrentResearch}
+
+\chapter{Analiza rynku}
+\input{chapters/Chapter05_CurrentMarket}
+
+\chapter{Perspektywy rozwoju}
+\input{chapters/Chapter06_DevelopmentOpportunities}
+
+\chapter{Wnioski}
+\input{chapters/Chapter07_Conclusions}
+
+\appendix
+\chapter{Dodatek}
+\input{chapters/appendix}
+
+\listoffigures
+
+\printbibliography[
+heading=bibintoc
+]
+%\bibliographystyle{plain}
+%\bibliography{bibliography}
+
+
+\end{document}

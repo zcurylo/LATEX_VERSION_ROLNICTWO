@@ -1,0 +1,474 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{NEW_HOLLAND_PLM}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=c15bed8304cfe586101c898ab9dc2ebc}{Agriculture}{A\bibinitperiod}{New\bibnamedelima Holland}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=c15bed8304cfe586101c898ab9dc2ebc}{Agriculture}{A\bibinitperiod}{New\bibnamedelima Holland}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c15bed8304cfe586101c898ab9dc2ebc}
+      \strng{fullhash}{c15bed8304cfe586101c898ab9dc2ebc}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labeltitle}{Gospodarstwo z precyzją New Holland}
+      \field{month}{03}
+      \field{title}{Gospodarstwo z precyzją New Holland}
+      \field{urlday}{23}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://agriculture.newholland.com/poland/pl/PLM/Documents/PLM_138009_POL.pdf
+      \endverb
+    \endentry
+    \entry{ALTAMIMI_2009}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=124083255fee9bca9fc4f653a1da3883}{Altamimi}{A\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=b23acc5d9c940c5f4bd879ce03ed4fa1}{Collilieux}{C\bibinitperiod}{X}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=124083255fee9bca9fc4f653a1da3883}{Altamimi}{A\bibinitperiod}{Z}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=b23acc5d9c940c5f4bd879ce03ed4fa1}{Collilieux}{C\bibinitperiod}{X}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c03de851170591a752c8d1f56e69a3ff}
+      \strng{fullhash}{c03de851170591a752c8d1f56e69a3ff}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labeltitle}{IGS contribution to the ITRF}
+      \field{journaltitle}{Journal of Geodesy}
+      \field{number}{3-4}
+      \field{title}{IGS contribution to the ITRF}
+      \field{volume}{83}
+      \field{year}{2009}
+      \field{pages}{375\bibrangedash 383}
+    \endentry
+    \entry{BOROWIEC}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=711050ea462ec9ba2d442cf1fff21167}{Borowiec}{B\bibinitperiod}{Obserwatorium\bibnamedelimb Astrogeodynamiczne\bibnamedelimb CBK\bibnamedelima PAN}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=711050ea462ec9ba2d442cf1fff21167}{Borowiec}{B\bibinitperiod}{Obserwatorium\bibnamedelimb Astrogeodynamiczne\bibnamedelimb CBK\bibnamedelima PAN}{O\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{711050ea462ec9ba2d442cf1fff21167}
+      \strng{fullhash}{711050ea462ec9ba2d442cf1fff21167}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labeltitle}{Informacje Ogólne}
+      \field{month}{05}
+      \field{title}{Informacje Ogólne}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://orchid.cbk.poznan.pl/
+      \endverb
+    \endentry
+    \entry{PA_RemoteIrrigation}{article}{}
+      \name{labelname}{6}{}{%
+        {{hash=b8ba9e8d4f672b16f7063306d9a4d2df}{Ch{á}vez}{C\bibinitperiod}{Jos{é}\bibnamedelima L}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=eb393459cbd0acd8e7982e642251d4e4}{Pierce}{P\bibinitperiod}{Francis\bibnamedelima J}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d9a359f67f62bbb236bd1a0d9a1a4175}{Elliott}{E\bibinitperiod}{Todd\bibnamedelima V}{T\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=ac0f7f3fb34bed4aa8b1cb79613ee23b}{Evans}{E\bibinitperiod}{Robert\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=4e91d080b6b8e28cf8b19b44079cd237}{Kim}{K\bibinitperiod}{Yunseop}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=d6e76a83fd09efb0b6fd1b15059c468e}{Iversen}{I\bibinitperiod}{William\bibnamedelima M}{W\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=b8ba9e8d4f672b16f7063306d9a4d2df}{Ch{á}vez}{C\bibinitperiod}{Jos{é}\bibnamedelima L}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=eb393459cbd0acd8e7982e642251d4e4}{Pierce}{P\bibinitperiod}{Francis\bibnamedelima J}{F\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d9a359f67f62bbb236bd1a0d9a1a4175}{Elliott}{E\bibinitperiod}{Todd\bibnamedelima V}{T\bibinitperiod\bibinitdelim V\bibinitperiod}{}{}{}{}}%
+        {{hash=ac0f7f3fb34bed4aa8b1cb79613ee23b}{Evans}{E\bibinitperiod}{Robert\bibnamedelima G}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=4e91d080b6b8e28cf8b19b44079cd237}{Kim}{K\bibinitperiod}{Yunseop}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=d6e76a83fd09efb0b6fd1b15059c468e}{Iversen}{I\bibinitperiod}{William\bibnamedelima M}{W\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{214fe9b51d114fde30eea6a9bbd7df61}
+      \strng{fullhash}{25e63848f6701e27d645a8e88f9fced3}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labeltitle}{A remote irrigation monitoring and control system (RIMCS) for continuous move systems. Part B: Field testing and results}
+      \field{journaltitle}{Precision agriculture}
+      \field{number}{1}
+      \field{title}{A remote irrigation monitoring and control system (RIMCS) for continuous move systems. Part B: Field testing and results}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{11\bibrangedash 26}
+    \endentry
+    \entry{IGIK_ITRS}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=4f595580cece2d658d0aa44f950e7309}{Kartografii}{K\bibinitperiod}{Instytut\bibnamedelima Geodezji}{I\bibinitperiod\bibinitdelim G\bibinitperiod}{i}{i\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4f595580cece2d658d0aa44f950e7309}{Kartografii}{K\bibinitperiod}{Instytut\bibnamedelima Geodezji}{I\bibinitperiod\bibinitdelim G\bibinitperiod}{i}{i\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{4f595580cece2d658d0aa44f950e7309}
+      \strng{fullhash}{4f595580cece2d658d0aa44f950e7309}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Międzynarodowy Ziemski System Odniesienia (ITRS)}
+      \field{month}{05}
+      \field{title}{Międzynarodowy Ziemski System Odniesienia (ITRS)}
+      \field{urlday}{18}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.igik.edu.pl/pl/geodezja-i-geodynamika-miedzynarodowy-ziemski-system-odniesienia-itrs
+      \endverb
+    \endentry
+    \entry{KOUBA_2009}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=988e6fc4f7e105dfe3767e1935bcd467}{Kouba}{K\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=988e6fc4f7e105dfe3767e1935bcd467}{Kouba}{K\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Geodetic Survey Division, Natural Resources Canada}%
+      }
+      \strng{namehash}{988e6fc4f7e105dfe3767e1935bcd467}
+      \strng{fullhash}{988e6fc4f7e105dfe3767e1935bcd467}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{A guide to using International GNSS Service (IGS) products}
+      \field{title}{A guide to using International GNSS Service (IGS) products}
+      \field{year}{2009}
+    \endentry
+    \entry{KRYNSKI_SYSTEMY}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=048ae52f0097b5fb38081599e57024ac}{Kry{ń}ski}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=56bb69a0a147cb5717ea5a4c448ddd22}{Rogowski}{R\bibinitperiod}{JERZY\bibnamedelima B}{J\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=048ae52f0097b5fb38081599e57024ac}{Kry{ń}ski}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=56bb69a0a147cb5717ea5a4c448ddd22}{Rogowski}{R\bibinitperiod}{JERZY\bibnamedelima B}{J\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7f755b18987e4859a82bcde50ecfaee0}
+      \strng{fullhash}{7f755b18987e4859a82bcde50ecfaee0}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Systemy i uk{ł}ady odniesienia w geodezji, geodynamice i astronomii}
+      \field{journaltitle}{Seria monograficzna Instytutu Geodezji i Kartografii}
+      \field{number}{10}
+      \field{title}{Systemy i uk{ł}ady odniesienia w geodezji, geodynamice i astronomii}
+      \field{year}{2004}
+      \field{pages}{11\bibrangedash 35}
+    \endentry
+    \entry{ROCZNIK_2014}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=048ae52f0097b5fb38081599e57024ac}{Kry{ń}ski}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d4852edde996d1c16bc97b8e5070b99a}{S{ę}kowski}{S\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=048ae52f0097b5fb38081599e57024ac}{Kry{ń}ski}{K\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d4852edde996d1c16bc97b8e5070b99a}{S{ę}kowski}{S\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{50d39f80d4dc6992767961abd3c71272}
+      \strng{fullhash}{50d39f80d4dc6992767961abd3c71272}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Rocznik Astronomiczny na rok 2014}
+      \field{journaltitle}{Kry{ń}ski, Instytut Geodezji i Kartografii, Warszawa,(221 pp)}
+      \field{title}{Rocznik Astronomiczny na rok 2014}
+      \field{year}{2013}
+    \endentry
+    \entry{CCTA_943_950}{incollection}{}
+      \name{labelname}{2}{}{%
+        {{hash=b0f3d6dc71f8610427ff374e909024b2}{Liu}{L\bibinitperiod}{Zhaoxiang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=baca2d4cc45983e734aa75be8b4b653a}{Liu}{L\bibinitperiod}{Gang}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=b0f3d6dc71f8610427ff374e909024b2}{Liu}{L\bibinitperiod}{Zhaoxiang}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=baca2d4cc45983e734aa75be8b4b653a}{Liu}{L\bibinitperiod}{Gang}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d7091a48cb3cfc6fdc13e69aa2b9b15a}
+      \strng{fullhash}{d7091a48cb3cfc6fdc13e69aa2b9b15a}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labeltitle}{Autonomous Navigation System Based on GPS}
+      \field{booktitle}{Computer And Computing Technologies In Agriculture, Volume II}
+      \field{title}{Autonomous Navigation System Based on GPS}
+      \field{year}{2008}
+      \field{pages}{943\bibrangedash 950}
+    \endentry
+    \entry{CCTA5_268_278}{incollection}{}
+      \name{labelname}{3}{}{%
+        {{hash=c7d38ac76af56f65788345913a01719c}{Liu}{L\bibinitperiod}{Zhimin}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=0777e912bb7c3f2f4ac11d06e8baa326}{Xiong}{X\bibinitperiod}{Weidong}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=230a4f8b71d9f7876c6425b4bf5870c7}{Cao}{C\bibinitperiod}{Xuewei}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=c7d38ac76af56f65788345913a01719c}{Liu}{L\bibinitperiod}{Zhimin}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=0777e912bb7c3f2f4ac11d06e8baa326}{Xiong}{X\bibinitperiod}{Weidong}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=230a4f8b71d9f7876c6425b4bf5870c7}{Cao}{C\bibinitperiod}{Xuewei}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{103f8e7e8d72b509896777caa509c9cc}
+      \strng{fullhash}{103f8e7e8d72b509896777caa509c9cc}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labeltitle}{Design of precision fertilization management information system on GPS and GIS technologies}
+      \field{booktitle}{Computer and Computing Technologies in Agriculture V}
+      \field{title}{Design of precision fertilization management information system on GPS and GIS technologies}
+      \field{year}{2012}
+      \field{pages}{268\bibrangedash 277}
+    \endentry
+    \entry{CLAAS_stearing_systems}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=706b5ebd7f6312da2f8486340ad53964}{o.}{o\bibinitperiod}{CLAAS\bibnamedelimb Polska\bibnamedelima Sp.}{C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}{z\bibnamedelima o.}{z\bibinitperiod\bibinitdelim o\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=706b5ebd7f6312da2f8486340ad53964}{o.}{o\bibinitperiod}{CLAAS\bibnamedelimb Polska\bibnamedelima Sp.}{C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}{z\bibnamedelima o.}{z\bibinitperiod\bibinitdelim o\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{706b5ebd7f6312da2f8486340ad53964}
+      \strng{fullhash}{706b5ebd7f6312da2f8486340ad53964}
+      \field{sortinit}{o}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labeltitle}{Broszura Systemy Prowadzenia}
+      \field{month}{03}
+      \field{title}{Broszura Systemy Prowadzenia}
+      \field{urlday}{23}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.claas.pl/blueprint/servlet/blob/353304/0a1537526737bcec9c9ae1223ade8311/227945-dataRaw.pdf
+      \endverb
+    \endentry
+    \entry{JOHN_DEERE_solutions}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=911bbd517b2e035801b419be3d01c4d6}{o.o.}{o\bibinitperiod}{John\bibnamedelimb Deere\bibnamedelimb Polska\bibnamedelima Sp.}{J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}{z}{z\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=911bbd517b2e035801b419be3d01c4d6}{o.o.}{o\bibinitperiod}{John\bibnamedelimb Deere\bibnamedelimb Polska\bibnamedelima Sp.}{J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}{z}{z\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{911bbd517b2e035801b419be3d01c4d6}
+      \strng{fullhash}{911bbd517b2e035801b419be3d01c4d6}
+      \field{sortinit}{o}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labeltitle}{Rozwiązania rolnictwa precyzyjnego John Deere}
+      \field{month}{03}
+      \field{title}{Rozwiązania rolnictwa precyzyjnego John Deere}
+      \field{urlday}{23}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.deere.pl/pl_PL/docs/product/equipment/agricultural_management_solutions/brochure/ams_fullline_brochure.html
+      \endverb
+    \endentry
+    \entry{CCTA5_188_192}{incollection}{}
+      \name{labelname}{2}{}{%
+        {{hash=1d57dfce8f063a5756960f947a72cafd}{Pan}{P\bibinitperiod}{Guobing}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=8a7f2f5d5a9c1129818510492b914e6f}{Feng}{F\bibinitperiod}{Xiao}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=1d57dfce8f063a5756960f947a72cafd}{Pan}{P\bibinitperiod}{Guobing}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=8a7f2f5d5a9c1129818510492b914e6f}{Feng}{F\bibinitperiod}{Xiao}{X\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5eeaefd72f64a28ed8f5d2205c052024}
+      \strng{fullhash}{5eeaefd72f64a28ed8f5d2205c052024}
+      \field{sortinit}{P}
+      \field{sortinithash}{b8af9282ac256b81613dc9012a0ac921}
+      \field{labeltitle}{Research on Control System of Variable Rate Fertilizer Applicator in Precision Farming Based on Combined Positioning of GPS, Electronic Compass and Gyroscope}
+      \field{booktitle}{Computer and Computing Technologies in Agriculture V}
+      \field{title}{Research on Control System of Variable Rate Fertilizer Applicator in Precision Farming Based on Combined Positioning of GPS, Electronic Compass and Gyroscope}
+      \field{year}{2012}
+      \field{pages}{188\bibrangedash 192}
+    \endentry
+    \entry{IERS_2010}{report}{}
+      \name{labelname}{2}{}{%
+        {{hash=c3a80b0556621244f11aa62960762f56}{Petit}{P\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=e740261157af0b8144a433343bf7f200}{Luzum}{L\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=c3a80b0556621244f11aa62960762f56}{Petit}{P\bibinitperiod}{G}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=e740261157af0b8144a433343bf7f200}{Luzum}{L\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {ISBN 3-89888-989-6}%
+      }
+      \strng{namehash}{a42702750aa7d175f91bae8a8b858a8e}
+      \strng{fullhash}{a42702750aa7d175f91bae8a8b858a8e}
+      \field{sortinit}{P}
+      \field{sortinithash}{b8af9282ac256b81613dc9012a0ac921}
+      \field{labeltitle}{IERS Conventions 2010, IERS Technical Note; 36, Frankfurt am Main: Verlag des Bundesamts f{ü}r Kartographie und Geod{ä}sie}
+      \field{title}{IERS Conventions 2010, IERS Technical Note; 36, Frankfurt am Main: Verlag des Bundesamts f{ü}r Kartographie und Geod{ä}sie}
+      \field{type}{techreport}
+      \field{year}{2010}
+    \endentry
+    \entry{ggos}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=b63a58685e949cc6316aa83215db8c56}{Plag}{P\bibinitperiod}{Hans-Peter}{H\bibinithyphendelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=c9469400afa4b3bc87f13e728e9e6a08}{Pearlman}{P\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=b63a58685e949cc6316aa83215db8c56}{Plag}{P\bibinitperiod}{Hans-Peter}{H\bibinithyphendelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=c9469400afa4b3bc87f13e728e9e6a08}{Pearlman}{P\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{af2d244ab9fe1f81c5a39faf5ca43348}
+      \strng{fullhash}{af2d244ab9fe1f81c5a39faf5ca43348}
+      \field{sortinit}{P}
+      \field{sortinithash}{b8af9282ac256b81613dc9012a0ac921}
+      \field{labeltitle}{Global geodetic observing system: meeting the requirements of a global society on a changing planet in 2020}
+      \field{title}{Global geodetic observing system: meeting the requirements of a global society on a changing planet in 2020}
+      \field{year}{2009}
+    \endentry
+    \entry{BRZEZINSKI_2012}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=666127da1a599d79d652d37f4c377254}{Rogowski}{R\bibinitperiod}{Jerzy}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=feb350a6438366404744760d024d2a51}{Brzezi{ń}ski}{B\bibinitperiod}{Aleksander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=666127da1a599d79d652d37f4c377254}{Rogowski}{R\bibinitperiod}{Jerzy}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=feb350a6438366404744760d024d2a51}{Brzezi{ń}ski}{B\bibinitperiod}{Aleksander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b741159824d7bfc99b083ded5caa53af}
+      \strng{fullhash}{b741159824d7bfc99b083ded5caa53af}
+      \field{sortinit}{R}
+      \field{sortinithash}{ff5a3533ecf9d5a03ff60b1e1389b63d}
+      \field{labeltitle}{The celestial reference system and its role in the epoch of global geodetic technologies}
+      \field{journaltitle}{Reports on Geodesy and Geoinformatics}
+      \field{title}{The celestial reference system and its role in the epoch of global geodetic technologies}
+      \field{volume}{92}
+      \field{year}{2012}
+      \field{pages}{163\bibrangedash 174}
+    \endentry
+    \entry{IERS_ICRS}{online}{}
+      \name{labelname}{2}{}{%
+        {{hash=0437e916b15ae335d3b3da9df0fb0501}{Rotation}{R\bibinitperiod}{International\bibnamedelima Earth}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=b6c9e1e3629a7cf9be246c112d6a8b81}{Service}{S\bibinitperiod}{Reference\bibnamedelima System}{R\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=0437e916b15ae335d3b3da9df0fb0501}{Rotation}{R\bibinitperiod}{International\bibnamedelima Earth}{I\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=b6c9e1e3629a7cf9be246c112d6a8b81}{Service}{S\bibinitperiod}{Reference\bibnamedelima System}{R\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3541fe9e8ee5bb7551308fe4954d25bd}
+      \strng{fullhash}{3541fe9e8ee5bb7551308fe4954d25bd}
+      \field{sortinit}{R}
+      \field{sortinithash}{ff5a3533ecf9d5a03ff60b1e1389b63d}
+      \field{labeltitle}{The International Celestial Reference System (ICRS)}
+      \field{month}{05}
+      \field{title}{The International Celestial Reference System (ICRS)}
+      \field{urlday}{11}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.iers.org/IERS/EN/DataProducts/ICRS/icrs.html
+      \endverb
+    \endentry
+    \entry{CCTA_769_775}{incollection}{}
+      \name{labelname}{2}{}{%
+        {{hash=099b49eba881fb48d8a736fb9873c0e6}{Wan}{W\bibinitperiod}{Xiaojun}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=baca2d4cc45983e734aa75be8b4b653a}{Liu}{L\bibinitperiod}{Gang}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=099b49eba881fb48d8a736fb9873c0e6}{Wan}{W\bibinitperiod}{Xiaojun}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=baca2d4cc45983e734aa75be8b4b653a}{Liu}{L\bibinitperiod}{Gang}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{82434a16ca350c5834e6c5ff8806c89b}
+      \strng{fullhash}{82434a16ca350c5834e6c5ff8806c89b}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labeltitle}{Automatic Navigation System with Multiple Sensors}
+      \field{booktitle}{Computer And Computing Technologies In Agriculture, Volume II}
+      \field{title}{Automatic Navigation System with Multiple Sensors}
+      \field{year}{2008}
+      \field{pages}{769\bibrangedash 776}
+    \endentry
+    \entry{CCTA5_461_469}{incollection}{}
+      \name{labelname}{5}{}{%
+        {{hash=e3f2f0c641e70af3487bf9b6e47b0eaf}{Zhang}{Z\bibinitperiod}{Fangming}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=7c4c47bf72ba07c1953d1b75c9b81e16}{Feng}{F\bibinitperiod}{Ximing}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=e5d6fa51a69f9c96a946952d51fd92f7}{Li}{L\bibinitperiod}{Yuan}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=aa3acf556d8927f825ee8515d6054fca}{Rao}{R\bibinitperiod}{Xiuqin}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=8c2f7d54c56e0bd08690d890ca3e58ad}{Cui}{C\bibinitperiod}{Di}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=e3f2f0c641e70af3487bf9b6e47b0eaf}{Zhang}{Z\bibinitperiod}{Fangming}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=7c4c47bf72ba07c1953d1b75c9b81e16}{Feng}{F\bibinitperiod}{Ximing}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=e5d6fa51a69f9c96a946952d51fd92f7}{Li}{L\bibinitperiod}{Yuan}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=aa3acf556d8927f825ee8515d6054fca}{Rao}{R\bibinitperiod}{Xiuqin}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=8c2f7d54c56e0bd08690d890ca3e58ad}{Cui}{C\bibinitperiod}{Di}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{cd9249e0e86bad597f3ae4ad6753d24a}
+      \strng{fullhash}{8a3be294a1d6bf2fcee958f8a9d6eeae}
+      \field{sortinit}{Z}
+      \field{sortinithash}{9cca09897f0dfd9ed260e065f6d82cd6}
+      \field{labeltitle}{A Low-Cost Positioning System for Parallel Tracking Applications of Agricultural Vehicles by Using Kalman Filter}
+      \field{booktitle}{Computer and Computing Technologies in Agriculture V}
+      \field{title}{A Low-Cost Positioning System for Parallel Tracking Applications of Agricultural Vehicles by Using Kalman Filter}
+      \field{year}{2012}
+      \field{pages}{461\bibrangedash 470}
+    \endentry
+    \entry{CCTA_951_958}{incollection}{}
+      \name{labelname}{3}{}{%
+        {{hash=d4a1e1da3fd156d758eaafeb35e9d7f8}{Zhang}{Z\bibinitperiod}{Xiaochao}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=26c63a9d05da016fa2120946d9b2c1a3}{Hu}{H\bibinitperiod}{Xiaoan}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=fbe2f52459114fbe9b871010a29b5d62}{Mao}{M\bibinitperiod}{Wenhua}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=d4a1e1da3fd156d758eaafeb35e9d7f8}{Zhang}{Z\bibinitperiod}{Xiaochao}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=26c63a9d05da016fa2120946d9b2c1a3}{Hu}{H\bibinitperiod}{Xiaoan}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=fbe2f52459114fbe9b871010a29b5d62}{Mao}{M\bibinitperiod}{Wenhua}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9fb65139ddb9500dd292a106061eba36}
+      \strng{fullhash}{9fb65139ddb9500dd292a106061eba36}
+      \field{sortinit}{Z}
+      \field{sortinithash}{9cca09897f0dfd9ed260e065f6d82cd6}
+      \field{labeltitle}{Development of Intelligent Equipments for Precision Agriculture}
+      \field{booktitle}{Computer And Computing Technologies In Agriculture, Volume II}
+      \field{title}{Development of Intelligent Equipments for Precision Agriculture}
+      \field{year}{2008}
+      \field{pages}{951\bibrangedash 958}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

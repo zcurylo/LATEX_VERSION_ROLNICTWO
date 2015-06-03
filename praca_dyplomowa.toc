@@ -1,0 +1,85 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {polish}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Systemy nawigacyjne}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Uk\IeC {\l }ad Odniesienia}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}ICRS}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}ITRS}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Systemy GNSS}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}GPS}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}GLONASS}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}GALILEO}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}BaiDou-Compass}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Indian IRNSS}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Algorytmy Pozycjonowania}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}DGPS}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}RTK}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}PPP}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Nawigacja Inercjalna}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Zaawansowane metody opracowania obserwacji}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Algorytmy sterowania}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Podzia\IeC {\l } algorytm\IeC {\'o}w sterowania ze wzgl\IeC {\k e}du na dostarczane dane wej\IeC {\'s}ciowe}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Podzia\IeC {\l } algorytm\IeC {\'o}w sterowania ze wzgl\IeC {\k e}du na zastosowane algorytmy decyzyjne}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Aktualne badania}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Zintegrowane systemy pozycjonowania w czasie rzeczywistym}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Spegcjalistyczne opracowanie obserwacji - postprocessing}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Inne zastosowania GNSS w rolnictwie precyzyjnym}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Analiza rynku}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Wykorzystanie GNSS}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Zastosowanie system\IeC {\'o}w inercjalnych}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Zastosowanie sensor\IeC {\'o}w video}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Oprogramowanie telematyczne}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Perspektywy rozwoju}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Nadzieje zwi\IeC {\k a}zane z systemem GALILEO}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Dynamiczny rozw\IeC {\'o}j elektronicznych sensor\IeC {\'o}w ruchu}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Wykorzystanie systemu naziemnych stacji referencyjnych ASG-EUPOS}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Wnioski}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Dodatek}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}VLBI}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}DORIS}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}SLR}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}LLR}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{23}
