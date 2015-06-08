@@ -74,12 +74,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.1}VLBI}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}DORIS}{20}
+\contentsline {section}{\numberline {A.2}DORIS}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}SLR}{20}
+\contentsline {section}{\numberline {A.3}SLR}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}LLR}{21}
+\contentsline {section}{\numberline {A.4}LLR}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad}{21}
+\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{23}
+\contentsline {chapter}{Bibliografia}{27}

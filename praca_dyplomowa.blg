@@ -1,14 +1,14 @@
-[0] Config.pm:320> INFO - This is Biber 1.9
+[1] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'praca_dyplomowa.blg'
-[69] biber:277> INFO - === Mon Jun  1, 2015, 17:47:07
-[69] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
-[203] Biber.pm:635> INFO - Found 20 citekeys in bib section 0
-[246] Biber.pm:3051> INFO - Processing section 0
-[281] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
-[285] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[290] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[779] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[779] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[779] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
-[913] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
-[918] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
+[70] biber:277> INFO - === Sat Jun  6, 2015, 21:14:48
+[71] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
+[209] Biber.pm:635> INFO - Found 21 citekeys in bib section 0
+[252] Biber.pm:3051> INFO - Processing section 0
+[287] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[290] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[296] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[820] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[820] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[820] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
+[980] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
+[985] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl

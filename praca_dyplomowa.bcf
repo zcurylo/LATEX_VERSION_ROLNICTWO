@@ -2028,9 +2028,17 @@
     <bcf:citekey order="58">JOHN_DEERE_solutions</bcf:citekey>
     <bcf:citekey order="59">NEW_HOLLAND_PLM</bcf:citekey>
     <bcf:citekey order="60">ggos</bcf:citekey>
-    <bcf:citekey order="61">BOROWIEC</bcf:citekey>
-    <bcf:citekey order="62">BOROWIEC</bcf:citekey>
-    <bcf:citekey order="63">BOROWIEC</bcf:citekey>
+    <bcf:citekey order="61">ggos</bcf:citekey>
+    <bcf:citekey order="62">ggos</bcf:citekey>
+    <bcf:citekey order="63">ggos</bcf:citekey>
+    <bcf:citekey order="64">ggos</bcf:citekey>
+    <bcf:citekey order="65">ggos</bcf:citekey>
+    <bcf:citekey order="66">DORIS_AVISO</bcf:citekey>
+    <bcf:citekey order="67">DORIS_AVISO</bcf:citekey>
+    <bcf:citekey order="68">DORIS_AVISO</bcf:citekey>
+    <bcf:citekey order="69">BOROWIEC</bcf:citekey>
+    <bcf:citekey order="70">BOROWIEC</bcf:citekey>
+    <bcf:citekey order="71">BOROWIEC</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

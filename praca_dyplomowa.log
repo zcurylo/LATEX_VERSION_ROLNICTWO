@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.12.20)  1 JUN 2015 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.12.20)  6 JUN 2015 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -881,23 +881,43 @@ Rozdzia\l  7.
 ]
 Dodatek A.
 (./chapters/appendix.tex
-File: images/appendix_pomiary_laserowe.eps Graphic file (type eps)
- <images/appendix_pomiary_laserowe.eps>
-File: images/appendix_pomiary_laserowe2.eps Graphic file (type eps)
+File: images/appendix_vlbi_antenna.eps Graphic file (type eps)
+ <images/appendix_vlbi_antenna.eps>
+File: images/appendix_vlbi_principle.eps Graphic file (type eps)
 
-<images/appendix_pomiary_laserowe2.eps>
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 47.
+<images/appendix_vlbi_principle.eps>
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 30.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [20
 
-]) [21]
-(./praca_dyplomowa.lof)
+]
+File: images/appendix_doris_antenna.eps Graphic file (type eps)
+
+<images/appendix_doris_antenna.eps>
+File: images/appendix_doris_receiver.eps Graphic file (type eps)
+ <images/appendix_doris_receiver.eps>
+File: images/appendix_doris_freequency_generator.eps Graphic file (type eps)
+
+<images/appendix_doris_freequency_generator.eps> [21]
+File: images/appendix_doris_infrastructure.eps Graphic file (type eps)
+
+<images/appendix_doris_infrastructure.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23]
+File: images/appendix_pomiary_laserowe.eps Graphic file (type eps)
+ <images/appendix_pomiary_laserowe.eps>
+File: images/appendix_pomiary_laserowe2.eps Graphic file (type eps)
+
+<images/appendix_pomiary_laserowe2.eps> [24]) [25] (./praca_dyplomowa.lof)
 \tf@lof=\write5
 \openout5 = `praca_dyplomowa.lof'.
 
- [22
+
+[26
 
 ]
 Underfull \hbox (badness 2913) in paragraph at lines 107--107
@@ -911,20 +931,20 @@ Underfull \hbox (badness 2237) in paragraph at lines 107--107
 1/cmr/m/n/12 (term. wiz.
  []
 
-[23
+[27
 
-] [24] (./praca_dyplomowa.aux)
+] [28] (./praca_dyplomowa.aux)
 Package logreq Info: Writing requests to 'praca_dyplomowa.run.xml'.
 \openout1 = `praca_dyplomowa.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 9784 strings out of 493110
- 158122 string characters out of 6135035
- 555253 words of memory out of 5000000
- 13067 multiletter control sequences out of 15000+600000
- 17593 words of font info for 40 fonts, out of 8000000 for 9000
+ 9815 strings out of 493110
+ 158840 string characters out of 6135035
+ 555372 words of memory out of 5000000
+ 13089 multiletter control sequences out of 15000+600000
+ 20342 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,49p,818b,2287s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on praca_dyplomowa.dvi (30 pages, 72116 bytes).
+Output written on praca_dyplomowa.dvi (34 pages, 84188 bytes).

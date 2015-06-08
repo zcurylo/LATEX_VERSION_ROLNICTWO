@@ -77,7 +77,7 @@
       \field{sortinit}{B}
       \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
       \field{labeltitle}{Informacje Ogólne}
-      \field{month}{05}
+      \field{month}{06}
       \field{title}{Informacje Ogólne}
       \field{urlday}{01}
       \field{urlmonth}{06}
@@ -392,6 +392,28 @@
       \field{year}{2015}
       \verb{url}
       \verb http://www.iers.org/IERS/EN/DataProducts/ICRS/icrs.html
+      \endverb
+    \endentry
+    \entry{DORIS_AVISO}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=cce91addb93579ea799613e20eed5f08}{Spatiales}{S\bibinitperiod}{Centre\bibnamedelima National}{C\bibinitperiod\bibinitdelim N\bibinitperiod}{d’Etudes}{d\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=cce91addb93579ea799613e20eed5f08}{Spatiales}{S\bibinitperiod}{Centre\bibnamedelima National}{C\bibinitperiod\bibinitdelim N\bibinitperiod}{d’Etudes}{d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{cce91addb93579ea799613e20eed5f08}
+      \strng{fullhash}{cce91addb93579ea799613e20eed5f08}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labeltitle}{DORIS}
+      \field{month}{06}
+      \field{title}{DORIS}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.aviso.altimetry.fr/en/techniques/doris.html
       \endverb
     \endentry
     \entry{CCTA_769_775}{incollection}{}
