@@ -1,9 +1,5 @@
-%TODO opisać VLBI, laser ranging, coordinates like ITRF :)\\
-%TODO trzeba opisać pokrutce aktualne systemy satelitarne GPS, GALILEO, GLONASS, BaiDou-Compass, indian IRNSS\\
-%TODO trzeba opisać na czym polega RTK, DGPS etc.
-
-W tym rozdziale omówione zostały podstawy teoretyczne dotyczące infrastruktury geodezyjnej niezbędnej do określania 
-położenia punktów a zatem i obiektów w przestrzeni. Na początku zostały omówione zagadnienia dotyczące geodezji kosmicznej,
+﻿W tym rozdziale omówione zostały podstawy teoretyczne dotyczące infrastruktury geodezyjnej niezbędnej do określania
+połorzenia punktów a zatem i obiektów w przestrzeni. Na początku zostały omówione zagadnienia dotyczące geodezji kosmicznej,
 której techniki zrewolucjonizowały możliwości człowieka w dziedzinie nawigacji tak bardzo istotnej dla rolnictwa precyzyjnego.
 W dalszej części rozdziału opisano pokrótce algorytmy wyznaczania pozycji w nawigacji satelitarnej oraz inercjalnej, a tekże metodę 
 integracji tych dwóch jakże uzupełniających się technik. 
@@ -89,19 +85,136 @@ decymetrów. W układzie ITRF powyższe wysokie częstotliwości są eliminowane
 bazach (<100km) fluktuacje są w przybliżeniu takie same, zatem do współrzędnych ITRF nie jest konieczne wprowadzanie poprawek.
 Poprawki są jednak konieczne gdy wykonujemy pomiary w sensie absolutnym (aktualną pozycję wyznaczamy bezpośrednio względem znanych orbit)
 w technice PPP lub w przypadku gdy pomiary różnicowe wykonywane są dla dużych odległości. \cite[][strona 11]{KOUBA_2009}
-\section{Systemy GNSS}
+
+\section{Globalne Systemy Nawigacji Satelitarnej GNSS}
+\noindent Znaczenie akronimu GNSS (Global Navigation Satellite Systems) nie jest jednoznaczne. Większość środowiska naukowego 
+postrzega ostatni wyraz skrótu w liczbie mnogiej - systemy, takiej też interpretacji przyjęto używać w niniejszej pracy.
+Dzieje się tak ponieważ, jest kilka systemów satelitarnego pozycjonowania. Większość z nich 
+została opisana pokrótce w dalszej częsći tego podrozdziału. Jednakże jeżeli spojrzymy na systemy GNSS z punktu widzenia rozwiązania 
+nawigacyjnego bazującego na sygnałach pochodzących od różnych satelitów ( w sensie przynależności do konkretnego systemu), wtedy jako całość 
+tworzą one jeden globalny system nawigacji satelitarnej \cite[][strona vii]{hofmann_gnss}.\\
+\indent Systemy GNSS są sukcesorami systemów dopplerowskich - systemu Transit\footnote{Pierwszy
+działający system nawigacji satelitarnej, używany przez marunarkę wojenną USA 
+do określania pozycji okrętów podwodnych z dokładnością 25m. Działanie oparte na efekcie Dopplera.} oraz Cikada\footnote{Stworzony przez naukowców byłego ZSRR 
+jako odpowiednik systemu Transit}, Bazują na od około 30 do 45 satelitów umieszczonych na tzw. średnich orbitach MEO\footnote{MEO 
+(Medium Earth Orbit) - średnia orbita okołoziemska w której wysokość satelity względem Ziemi waha się od 2000km do 35786km - wysokość orbity geostacjonarnego)}
+oraz emitujących fale radiowe w zakresie mikrofalowym na dwóch lub więcej częstotliwościach.
+Pasmo mikrofalowe pozwala na używanie systemów niezależnie od panujących warunków pogodowych, natomiast sygnał emitowany na przynajmniej dwóch częstotliwosciach 
+pozwala na eliminację negatywnego wpływu refrakcji jonosferycznej \cite[][strona 33]{ggos}. Quasi-symultaniczna obserwacja przez odbiornik kilku różnych 
+satelitów GNSS eliminuje w znacznym stopniu błąd zegara odbiornika. Wszystkie systemy GNSS są pasywne - odbiornik nie musi wysyłać żadnych sygnałów do satelitów w 
+celu wykonania pomiaru. Opisane właściwości uczyniły systemy GNSS niejako \enquote{koniami pociągowymi} nawigacji oraz geodezji kosmicznej \cite[][strona 36]{ggos}.\\
+\indent W każdym systemie GNSS wyróżnić można trzy główne części: segment kosmiczny, segment użytkowników oraz segment kontrolny.
+Zadaniem segmentu kosmicznego jest zapewnienie takiej konstelacji satelitów, która pozwoli na określanie pozycji oraz prędkości
+użytkownika niezależnie od jego połorzenia na Ziemi.
+Segment kontrolny steruje całym systemem poprzez uaktualnianie danych komputerów pokładowych satelitów oraz ochroną systemu przed nieautoryzowanymi użytkownikami.\\
+\indent Należy dodać, że istanieje cały szereg systemów wspomagania GNSS w zastosowaniach nawigacyjnych, które podobnie dzielimy na kosmiczne - SBAS\footnote{
+SBAS - space based augmentation systems} oraz naziemne - GBAS\footnote{GBAS - ground based augmentation systems}.
+Kosmiczne systemy wspomagania składają się z sieci naziemnych stacji referencyjnych generujących poprawki różnicowe oraz informacje o sprawności systemu GNSS, 
+które są dystrybuowane za momocą satelitów geostacjonarnych. W systemach GBAS odbiorniki referencyjne montowane są jedynie w pobliżu lotnisk, a poprawki 
+transmitowane są drogą radiową. Przykładami SBAS są Europejski system EGNOS\footnote{EGNOS - European Geostationary Navigation Overlay Service.} 
+oraz system WAAS\footnote{Wide Area Augmentation System} obejmujący swoim zasięgiem Amerykę Północną. 
 	\subsection{GPS}
-	\subsection{GLONASS}
+\noindent System GPS został stworzony przez Departament Obrony USA z myślą o wyznaczaniu pozycji, prędkości oraz synchronizacji czasu obiektów wojskowych
+w globalnym układzie odniesienia, niezależnie od warunków pogodowych oraz lokalizacji użytkownika na Ziemi \cite[][strona 309]{hofmann_gnss}.
+System GPS zarządzany przez Siły Powietrzne USA, osiągnął pełną operacyjność 17 lipca 1995r. System składa się z segmantu kosmicznego, kontrolnego oraz z segmantu użytkowników.
+Segmant kosmiczny tworzy konstelacja satelitów GPS transmitujących sygnały radiowe do użytkowników. Rząd Stanów Zjednoczonych zobowiązał się do 
+utrzymywania w przestrzeni kosmicznej minimum 24 satelity w ciągu 95\% czasu. Obecnie w przestrzeni znajduje się 31 satelitów krążących wokół Ziemi na 
+wysokości około 20200km, z których wyróżniamy 27 satelitów bazowych czynnych w załorzeniu nieprzerwanie. 
+Każdy obiega naszą planetę dwókrotnie w ciągu doby, poruszając się na jednej z sześciu orbit kołowych rozmieszczonych równomiernie co 60\degree,
+nachylonych względem płaszczyzny równika pod kątem 55\degree \cite[]{GPS_GOV}. Poniżej na rysunku \ref{fig:gps_space_segment} przedstawiono operacyjne satelity systemu GPS
+bloku II.
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.2\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{chapter2_gps_space_1.eps}
+  \caption{blok IIa}
+  \label{fig:block2a}
+\end{subfigure}%
+\begin{subfigure}{.2\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{chapter2_gps_space_2.eps}
+  \caption{blok IIR}
+  \label{fig:block2r}
+\end{subfigure}
+\begin{subfigure}{.2\textwidth}
+        \centering
+        \includegraphics[width=.9\linewidth]{chapter2_gps_space_3.eps}
+        \caption{blok IIR(M)}
+        \label{fig:block2rm}
+\end{subfigure}
+\begin{subfigure}{.2\textwidth}
+        \centering
+        \includegraphics[width=.9\linewidth]{chapter2_gps_space_4.eps}
+        \caption{blok IIF}
+        \label{fig:block2f}
+\end{subfigure}
+\caption{\textit{Operacyjne satelity systemu GPS}
+źródło: \cite[]{GPS_GOV}}
+\label{fig:gps_space_segment}
+\end{figure}
+\indent Segment kontrolny systemu GPS składa się z sieci stacji przedstawionych na rysunku \ref{fig:gps_control_segment} ze stacją główną zlokalizowaną w stanie Colorado.
+Zadaniem stacji kontrolnych jest śledzenie satelitów systemu GPS, kontrolowanie jakości transmisji danych, uaktualnianie danych oraz komputerów pokładowych znajdujących się
+na satelitach oraz sterowanie konstelacją GPS. Ze względu na załorzenia niniejszej pracy segment użytkowników został zawężony głównie do rolnictwa precyzyjnego i traktuje o
+nim niejako cała praca.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{chapter2_control_segment.eps}
+\caption{\textit{Stacje segmentu kontrolnego GPS} źródło: \cite[]{GPS_GOV}}
+\label{fig:gps_control_segment}
+\end{figure}
+\indent Sygnały wysyłane przez satelity dzielą się na militarne oraz do zastosowań cywilnych. Sygnały militarne są kodowane zatem w niniejszej pracy pokrótce opisano
+tylko sygnały ogólnodostępne. Satelity GPS emitują fale elektromagnetyczne w paśmie radiowym. Wyróżniamy trzy częstotliwości nośne dla sygnałów GPS: 
+L1 - częstotliwość podstawowa, L2 - Początkowo tylko do zastosowań wojskowych, od 2005 roku jest dostępna do zastosowań cywilnych, L5 - od kwietnia 2014r. pojawiła się 
+depesza nawigacyjna dostępna użytkownikom cywilnym. Częstotliwość L5 znajduje się w paśmie radiowym zarezerwowanym dla branży lotniczej \cite[]{GPS_GOV}.
+Rysunek \ref{fig:gps_freequencies} przedstawia tabelę częstotliwości nośnych GPS.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{chapter2_gps_freequencies.eps}
+\caption{\textit{Częstotliwości nośne sygnału GPS} źródło: \cite[][strona 329]{hofmann_gnss}}
+\label{fig:gps_freequencies}
+\end{figure}
+\noindent Bazując na powyższych częstotliwościach generowane są dane nawigacyjne w postaci tzw. kodów na których opierają się algorytmy wyznaczania pozycji odbiornika.
+C/A jest kodem propagowanym na częstotliwości L1 wraz z depeszą nawigacyjną, przeznaczonym dla użytkoników cywilnych do wyznaczania pozycji w czasie rzeczywistym.
+C/A jest kodem stosunkowo krótkim (297m), co pozwala na bardzo szybką inicjalizację,
+lecz co za tym idzie jest bardzo łatwo podatny interferencje \cite[][strona 332]{hofmann_gnss}.
+P(Y) - kod którego długość wynosi około 266.4 dni ze względu na tę właśnie cechę charakteryzuje się niemożnością jego odbierania bez apriorycznej znajomości dokładnej 
+poprawki zegara, pozycji oraz efemeryd satelitów. Modulowany na dwóch częstotliwościach L1 oraz L2 kod P(Y) w zastosowaniach nawigacyjnych jest przeznaczony jedynie dla wojska.
+Kodem, który jest modulowany na częstotliwości nośnej L2 i przeznaczonym do zastosowań komercyjnych jest kod L2C. Kod L2C poprzez kombinacje liniowe z kodem C/A pozwala 
+na korekcję negatywnego wpływu jonosfery. Użytkownicy cywilni którzy dysponują dwuczęstotliwościowymi odbiornikami dzięki kodowi L2C są w stanie uzyskać porównywalną
+dokładność jaką uzyskują użytkownicy autoryzowani na kodzie P(Y). L2C pozwala na szybszą inicjalizację odbiornika, podnosi niezawodność oraz niejako dostępność sygnału 
+GPS poprzez transmisję z wyższą efektywną mocą sygnału \cite[]{GPS_GOV}. Kolejnym kodem jest L5C. Kod L5C modulowany na częstotliwośći L5 został specjalnie zaprojektowany 
+aby sprostać wymaganiom aplikacji służących do celów zapewniania bezpieczeństwa życia ludzkiego \cite[][strona 335]{hofmann_gnss}. Kod L5C charakteryzuje się wysoką mocą 
+sygnału oraz przepustowością danych. L5C w kombinacji z kodem C/A zwiększy istotnie dokładność poprzez eliminację wpływy jonosfery. Sygnał na częstotliwośći L5 
+począwszy od 31 grudnia 2014 jest już eksperymentalnie dostępny dla użytkowników. Możliwe jest już zatem wykonywanie obserwacji sygnału GPS na trzech częstotliwościach nośnych,
+co prawdopodobnie pozwoli na uzyskanie sub-metrowych dokładności bez użycia wsparcia systemów augmentacyjnych \cite[]{GPS_GOV}. W planach modernizacyjnych systemu GPS jest,
+także wprowadzenie dodatkowego (oprócz C/A) kodu na częstotliwości L1 - L1C. Wprowadzenie jeszcze jednego kodu na częstotliwości L1 pozwoli na ulepszenie pozycji 
+odbiorników mobilnych w miastach bądź w innych trudnych terenach. Ponadto warto zwrócić uwagę na fakt, że kod L1C został zaprojektowany wspólnie przez Europę oraz 
+Stany Zjednoczone jako wspólny sygnał zarówno dla GPS jak i Galileo. Kod L1C docelowo ma być emitowany przez wszystkie dostępne systemy satelitarne \cite[]{GPS_GOV}.\\
+\indent Układ odniesienia względem, którego jest wyznaczana pozycja GPS to układ WGS84\footnote{WGS84 (World Geodetic System) geocentryczny ortokartezjański układ współrzędnych
+zbudowany pocztkowo w oparciu o obserwacje satelitów systemu Transit. Wraz z rozwojem technologii GPS układ został zmodernizowany czterokrotnie.
+Obecna realizacja to układ WGS84(1674) z lutego 2012 roku. Obecnie układ WGS84 jest zarządzany przez jedną z agencji wywiadu USA - National Geospatial Intelligance Agency.}
+,zdefiniowany poprzez wyznaczenie współrzędnych oraz prędkości stacji referencyjnych jako realizacja systemu WGS84. Współrzędne stacji referencyjnych są następnie 
+używane do wyznaczanie orbit satelitów GPS. Dokładność układu WGS84 względem aktualnego układu Ziemskiego ITRF jest centymetrowa \cite[][strona 51]{donnelly}.
+Należy zauważyć, że w zależności od kontekstu WGS84 odnosi się do systemu, układu odniesienia lub referencyjnej elipsoidy.
+Centymetrowa dokładność aktualnej realizacji układu odniesienia systemu GPS względem układu ITRF2008 na epokę 2005
+wynika bezpośrednio ze zgodności na poziomie definicyjnym systemów WGS84 oraz ITRS. Drobne różnice wynikają z tego, że do realizacji systemu WGS84 w celu uzyskania jak 
+największej spójniości danych używane są jedynie obserwacje GPS. Elipsoida\footnote{Powierzchnia powstała poprzez obrót elipsy o zadanych parametrach wokół jej 
+krótszej półosi. W tym konkretnym przypadku środek elipsoidy jest umieszczony w środku masy Ziemi, a jej krótsza półoś pokrywa się z osią Z układu odniesienia WGS84.}
+WGS84 jest powierzchnią odniesienia aproksymującą kształt oraz rozmiary Ziemi. Różnica między elipsoidą GRS80 złączoną z układem ITRF a elipsoidą WGS84 jest z punktu 
+widzenia dokładności wyznaczeń na potrzeby nawigacji, jest zaniedbywalna \cite[][strona 50]{donnelly}.\\
+\indent System czasu Systemu GPS jest oparty o wzorzec czasu atomowego. Nominalnie czas GPS różni się od Międzynarodowego Czasu Atomowego TAI o 19 sekund, i jest 
+ścisle związany z Uniwersalnym Czasem Koordynowanym UTC.  
+ 	\subsection{GLONASS}
 	\subsection{GALILEO}
-	\subsection{BaiDou-Compass}
-	\subsection{Indian IRNSS}
+	\subsection{Inne}
+	% trzeba opisac BaiDou-Compass oraz Indyjski IRNSS
 \section{Algorytmy Pozycjonowania}
 	\subsection{DGPS}
 	\subsection{RTK}
 	\subsection{PPP}
 \section{Nawigacja Inercjalna}
-\section{Zaawansowane metody opracowania obserwacji}
-
+% w tej sekcji troche o filtrze kalmana 
 \noindent
 Jeżeli wykorzystujemy w pomiarach pozycji DGPS – pomiar względny na podstawie pseudoodległości,
 to dokładność lokalizacji pojazdu wynosi około 2m. 

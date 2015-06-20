@@ -119,6 +119,79 @@
       \field{year}{2010}
       \field{pages}{11\bibrangedash 26}
     \endentry
+    \entry{donnelly}{inproceedings}{}
+      \name{labelname}{7}{}{%
+        {{hash=4163f78ab91e7ea040dde19c6405e0f7}{Donnelly}{D\bibinitperiod}{Nic}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=e08d12ff79602ab7b0fffbca95e78657}{Crook}{C\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=8bec74f89e97864fe7cd2b3e7a531f3a}{Haasdyk}{H\bibinitperiod}{Joel}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=2d6148170abac537c5aa2153476a1147}{Harrison}{H\bibinitperiod}{Craig}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=df96519034bd8ee80aec952f15d8dff0}{Rizos}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=d06ca0b363e9e942710baffaa416b768}{Roberts}{R\bibinitperiod}{Craig}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=a2204095693e2e2f12effe82a8630bfa}{Stanaway}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=4163f78ab91e7ea040dde19c6405e0f7}{Donnelly}{D\bibinitperiod}{Nic}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=e08d12ff79602ab7b0fffbca95e78657}{Crook}{C\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=8bec74f89e97864fe7cd2b3e7a531f3a}{Haasdyk}{H\bibinitperiod}{Joel}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=2d6148170abac537c5aa2153476a1147}{Harrison}{H\bibinitperiod}{Craig}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=df96519034bd8ee80aec952f15d8dff0}{Rizos}{R\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=d06ca0b363e9e942710baffaa416b768}{Roberts}{R\bibinitperiod}{Craig}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=a2204095693e2e2f12effe82a8630bfa}{Stanaway}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fb3e9fc1ceadbb0e37b87f93f42247ec}
+      \strng{fullhash}{c062847b9cad01eed069ba383265f657}
+      \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labeltitle}{Dynamic Datum Transformations in Australia and New Zealand}
+      \field{booktitle}{Proceedings of Surveying and Spatial Sciences Conference (LOCATE14)}
+      \field{title}{Dynamic Datum Transformations in Australia and New Zealand}
+      \field{year}{2013}
+      \field{pages}{7\bibrangedash 9}
+    \endentry
+    \entry{GPS_GOV}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d3c5cdc70637b77216497276418c89bc}{Government}{G\bibinitperiod}{Official\bibnamedelima U.S.}{O\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d3c5cdc70637b77216497276418c89bc}{Government}{G\bibinitperiod}{Official\bibnamedelima U.S.}{O\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d3c5cdc70637b77216497276418c89bc}
+      \strng{fullhash}{d3c5cdc70637b77216497276418c89bc}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labeltitle}{Information about the Global Positioning System (GPS) and related topics}
+      \field{month}{06}
+      \field{title}{Information about the Global Positioning System (GPS) and related topics}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.gps.gov/systems/gps/space/
+      \endverb
+    \endentry
+    \entry{hofmann_gnss}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=04b7ad2fc0fa6201bb36195a662b2d0a}{Hofmann-Wellenhof}{H\bibinithyphendelim W\bibinitperiod}{Bernhard}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=f3930c8eb25ab5b9cefdaaefeb5154c8}{Lichtenegger}{L\bibinitperiod}{Herbert}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=4a16723f9266282332bb3f591143aaea}{Wasle}{W\bibinitperiod}{Elmar}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=04b7ad2fc0fa6201bb36195a662b2d0a}{Hofmann-Wellenhof}{H\bibinithyphendelim W\bibinitperiod}{Bernhard}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=f3930c8eb25ab5b9cefdaaefeb5154c8}{Lichtenegger}{L\bibinitperiod}{Herbert}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=4a16723f9266282332bb3f591143aaea}{Wasle}{W\bibinitperiod}{Elmar}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{6de389c6a865d440510963b288ca97f0}
+      \strng{fullhash}{6de389c6a865d440510963b288ca97f0}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{GNSS--global navigation satellite systems: GPS, GLONASS, Galileo, and more}
+      \field{title}{GNSS--global navigation satellite systems: GPS, GLONASS, Galileo, and more}
+      \field{year}{2007}
+    \endentry
     \entry{IGIK_ITRS}{online}{}
       \name{labelname}{1}{}{%
         {{hash=4f595580cece2d658d0aa44f950e7309}{Kartografii}{K\bibinitperiod}{Instytut\bibnamedelima Geodezji}{I\bibinitperiod\bibinitdelim G\bibinitperiod}{i}{i\bibinitperiod}{}{}}%
@@ -414,6 +487,50 @@
       \field{year}{2015}
       \verb{url}
       \verb http://www.aviso.altimetry.fr/en/techniques/doris.html
+      \endverb
+    \endentry
+    \entry{vlbi_torun_katedra}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e303c7fcc7d7a86311fd1de34e69c30d}{UMK}{U\bibinitperiod}{Katedra\bibnamedelimb Radioastronomii\bibnamedelimb Centrum\bibnamedelima Astronomii}{K\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e303c7fcc7d7a86311fd1de34e69c30d}{UMK}{U\bibinitperiod}{Katedra\bibnamedelimb Radioastronomii\bibnamedelimb Centrum\bibnamedelima Astronomii}{K\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e303c7fcc7d7a86311fd1de34e69c30d}
+      \strng{fullhash}{e303c7fcc7d7a86311fd1de34e69c30d}
+      \field{sortinit}{U}
+      \field{sortinithash}{311bb924dfb84a64dcdd01c5b07d40b0}
+      \field{labeltitle}{Katedra Radioastronomii}
+      \field{month}{06}
+      \field{title}{Katedra Radioastronomii}
+      \field{urlday}{08}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.astro.uni.torun.pl/index.php?page=home&tab=home
+      \endverb
+    \endentry
+    \entry{vlbi_torun_tele}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e303c7fcc7d7a86311fd1de34e69c30d}{UMK}{U\bibinitperiod}{Katedra\bibnamedelimb Radioastronomii\bibnamedelimb Centrum\bibnamedelima Astronomii}{K\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e303c7fcc7d7a86311fd1de34e69c30d}{UMK}{U\bibinitperiod}{Katedra\bibnamedelimb Radioastronomii\bibnamedelimb Centrum\bibnamedelima Astronomii}{K\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e303c7fcc7d7a86311fd1de34e69c30d}
+      \strng{fullhash}{e303c7fcc7d7a86311fd1de34e69c30d}
+      \field{sortinit}{U}
+      \field{sortinithash}{311bb924dfb84a64dcdd01c5b07d40b0}
+      \field{labeltitle}{Nowy Polski Radioteleskop}
+      \field{month}{06}
+      \field{title}{Nowy Polski Radioteleskop}
+      \field{urlday}{08}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.astro.uni.torun.pl/index.php?page=RT90
       \endverb
     \endentry
     \entry{CCTA_769_775}{incollection}{}

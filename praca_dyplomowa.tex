@@ -3,14 +3,19 @@
 \def\UrlBreaks{\do\/\do37}
 %\usepackage[breaklinks]{hyperref}
 %\usepackage{breakurl} % to have hoply line breaks
+\usepackage{lmodern}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{newunicodechar}
+\DeclareUnicodeCharacter{00A0}{~}
 %\usepackage[T1, hyphens]{url}
 \usepackage[english, polish]{babel}
 %\usepackage[numbers]{natbib} %for bubliograpgy
 \usepackage{graphicx} %to have fancy drawing
 \usepackage{float}
 \usepackage{amsmath} % to render equations
+\usepackage{xspace} % to have degree mark
+\newcommand{\degree}{\ensuremath{{}^{\circ}}\xspace}
 \graphicspath{ {images/} } % to specify where images are stored 
 \usepackage[a4paper, width=150mm, top=25mm, bottom=25mm, bindingoffset=6mm]{geometry} % to specify a proper page formatting 
 \usepackage{fancyhdr} % to have headers and footers 
