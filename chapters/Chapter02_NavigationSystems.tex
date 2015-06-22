@@ -204,9 +204,71 @@ krótszej półosi. W tym konkretnym przypadku środek elipsoidy jest umieszczon
 WGS84 jest powierzchnią odniesienia aproksymującą kształt oraz rozmiary Ziemi. Różnica między elipsoidą GRS80 złączoną z układem ITRF a elipsoidą WGS84 jest z punktu 
 widzenia dokładności wyznaczeń na potrzeby nawigacji, jest zaniedbywalna \cite[][strona 50]{donnelly}.\\
 \indent System czasu Systemu GPS jest oparty o wzorzec czasu atomowego. Nominalnie czas GPS różni się od Międzynarodowego Czasu Atomowego TAI o 19 sekund, i jest 
-ścisle związany z Uniwersalnym Czasem Koordynowanym UTC.  
+ścisle związany z Uniwersalnym Czasem Koordynowanym UTC.\\
+Podsumowując ten paragraf można powiedzieć, że system GPS już od ponad dwóch dekad jest nieocenionym, dla takich dziedzin działalności człowieka jak:
+Budownictwo, Energetyka, Geodezja z Geodynamiką, Przemysł wydobywczy, Transport, Ratownictwo, Rolnictwo oraz wiele innych.
  	\subsection{GLONASS}
+Podobnie jak system GPS powstał na podstawie doświadczeń z systemem Transit, tak system GLONASS został zbudowany z doświadczeń sowieckich naukowców 
+z systemem Cikada. GLONASS jest systemem wojskowym, i podobnie jak GPS zaprojektowanym do dostarczania nielimitowanej liczbie użytkowników, niezależnie od pogody,
+trójwymiarowej pozycji, synchronizacji czasu, oraz prędkości w obrębie całego globu \cite[][strona 342]{hofmann_gnss}. Operacyjność systemu ogłoszono w 1993r. 
+jednakże nominalną konstelację 24 satelitów system osiągnął dopiero 18 stycznia 1996r. Z powodu kryzysu ekonomicznego Federacji Rosyjskiej liczba operacyjnych 
+satelitów systematycznie spadała i w roku 2001 osiągnęła minimum w postaci liczby sprawnych satelitów poniżej dzsiesięciu \cite[][strona 342]{hofmann_gnss}.
+Do pełnej operacyjności system GLONASS powrócił po około 10 latach 8 grudnia 2011 roku \cite[]{glonass_geoforum}.\\
+\indent Segment kosmiczny systemu GLONASS składa się z 24 satelitów poruszających się na orbitach kołowych na wysokości około 19100km nad powierzchnią Ziemi.
+Okres obiegu wokół Ziemi satelitów systemu GLONASS wynosi 11 godzin 15 minut i 44 sekundy. Konstelacja satelitów jest zgrupowana w trzech płaszczyznach o inklinacji\footnote{
+Inklinacja w tym kontekście określa kąt dwuścienny między płaszczyzną orbity satelity a płaszczyzną równika.} równej 64.8\degree - w każdej znajdują się 
+orbity ośmiu satelitów równomiernie rozmieszczonych (co 45\degree). Węzły wstępujące orbit satelitów należących do różnych płaszczyzn różnią się o 120\degree.
+Opisana konstelacja pozwala na symultaniczną widoczność minimum pięciu satelitów z około 99\% powierzchni Ziemi \cite[][strona 349]{hofmann_gnss}.\\
+\indent Segment kontrolny systemu GLONASS dzieli się na \begin{inparaenum}[1)] \item centrum sterowania systemem 
+\item stacje śledzące \end{inparaenum}. Centrum sterowania systemem dzieli się na centralny moduł sychronizacyjny (Schelkowo w regionie moskiewskim) odpowiedzialny
+za synchronizację czasu systemu GLONASS oraz część kontrolną (Krasnoznamensk 70km od Moskwy) gdzie ma miejsce zarządzanie wszystkimi funkcjami systemu oraz planowanie.
+Stacje śledzące są podzielone na trzy grupy: \begin{inparaenum}[a)] \item cztery stacje TT\&C wspomagane pięcioma stacjami pomiarów laserowych służące do
+śledzenia i monitorowania satelitów oraz wysyłania do nich wiadomości. \item cztery stacje służące do kontroli urządzeń elektronicznych. 
+\item stacje optyki kwantowej \end{inparaenum}. Niestety znacząca część informacji dotyczących segmentu kontrolnego systemu GLONASS
+nie jest dostępna publicznie \cite[][strona 353]{hofmann_gnss}.\\
+\indent Czas systemu GLONASS jest zarządzany przez wspomniany powyżej moduł synchronizacyjny za pomocą maserów wodorowych. Czas ten jest ściśle powiązany z czasem uniwersalnym 
+koordynowanym. Stałe przesunięcie wynoszące plus trzy godziny związane jest różnicą między czasem Moskiewskim oraz Greenwich. Ponadto występuje losowa 
+rozbierzność nieprzekraczająca 1ms, która wynika z tego, iż wspomniane skale czasu są utrzymywane przez różne zegary \cite[][strona 346]{hofmann_gnss}.\\
+\indent Jako system odniesienia systemu GLONASS oryginalnie przyjęto sowiecki SGS-85, który zamieniono w roku 1990 na SGS-90\footnote{ SGS (Soviet Geodetic System) Sowiecki 
+System Odniesień Przestrzennych}. Realizacja systemu to Kartezjański układ współrzędnych otrogonalnych PE-90 zrealizowany poprzez określenie współrzędnych 26 stacji 
+refrencyjnych. Różnica układu PE-90 względem układu ITRF jest dość znaczna jeżeli chodzi o wymagania dokładnościowe rolnictwa precyzyjnego.
+Dla przykładu wielka półoś elipsoidy geocentrycznej PE-90 jest aż o metr krótsza od odpowiadającego parametru elipsoidy GRS80. Należy jednak zaznaczyć, że 
+różnice współrzędnych punktów nie przekraczają 15 metrów (średnio 5m).
+Współrzędne z układu PE-90 do układu ITRF transformuje się za pomocą transformacji siedmioparametrowej wyznaczanej za
+pomocą porównania tras satelitów glonas dostępnych w obu układach odniesienia \cite[]{wgs84_pe90}.\\
+\indent System GLONASS podobnie jak system GPS dostarcza wysokiej jakości sygnałów dla użytkowników autoryzowanych, oraz standardowej dokładności sygnału 
+dla użytkowników cywilnych. Obecnie sygnały satelitarne systemu są przenoszone za pomocą dwóch pasm częstotliwości fali radiowej: G1 = 1602Mhz oraz G2 = 1246Mhz.
+W planowanej trzeciej generacji system będzie emitował dodatkowy sygnał modulowany w paśmie częstotliwości G3 = 1204.704Mhz w podobieństwie do trzeciej częstotliwości L5 
+systemu GPS. Tym co diametralnie różni system GLONASS od systemu GPS jest to, że każdy satelita moduluje swój sygnał na fali radiowej o unikalnej dla niego częstotliwości.
+Na rysunku \ref{fig:glonas_freq} przedstawiona została tabela według której każdemu satelicie przyporządkowywana jest unikalna częstotliwość.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.1]{chapter2_glonass_freq.eps}
+\caption{\textit{Częstotliwości nośne sygnału GLONASS} źródło: \cite[][strona 357]{hofmann_gnss}}
+\label{fig:glonas_freq}
+\end{figure}
+Tak samo jak w systemie GPS odpowiednik kodu C/A jest modulowany w paśmie częstotliwości G1 i jest nośnikiem standardowej usługi pozycjonowania.
+Wysokiej dokładności sygnał P nie jset kodowany (w przeciwieństwie do GPS) i jest modulowany na obu falach nośnych G1 oraz G2. Począwszy od roku 2004 
+kod standardowej dokładności jest także dostępny w paśmie G2. Na koniec warto odnotować, że pod pewnymi względami zastosowane w systemie GLONASS rozwiązania 
+są lepsze niż te z systemu GPS. Większa inklinacja orbit pozwala średnio obserwować więcej satelitów, a unikalne częstotliwości sygnału dla każdego satelity 
+znacząco zmniejszają niekorzystne efekty interferencji \cite[][strona 355]{hofmann_gnss}.
 	\subsection{GALILEO}
+System GALILEO zaprojektowano głównie na potrzeby Unii Europejskiej w celu ekonomicznego oraz strategicznego uniezależnienia jej od systemu GPS.
+Ze względu na to, że system GALILEO nie jest jeszcze operacyjny (aktualnie 8 satelitów) w pracy postanowiono opisać tylko jego najważniejsze załorzenia projektowe.\\
+\indent Segment kosmiczny systemu GALILEO docelowo ma się składać z 30 satelitów (27 + 3 zapasowe) po 9 satelitów operacyjnych na jedną płaszczyznę orbitalną.
+Inklinacje płaszczyzn mają wynosić 56\degree. Satelity będą się poruszały po orbitach prwie kołowych na wysokości 23616km równomiernie rozmieszczone co 40\degree w 
+płaszczyźnie orbity. Tak zaprojektowana konstelacja zapewnić ma globalną widoczność minimum 6 satelitów na wysokości powyżej 10\degree nad horyzontem.\\
+\indent Segmant naziemny systemu GALILEO został zaprojektowany tak aby składał się z części kontrolnej (kontrola oraz zarządzanie konstelacją satelitów) oraz 
+części operacyjnej, która ma odpowiadać za część nawigacyjną (depesze satelitów, kontrola danych, kontrola czasu oraz wiele innych). Warto nadmienić,
+że wśród stacji segmentu naziemnego oprócz klasycznej infrastruktury śledzącej satelity (kilkuczęstotliwościowe odbiorniki) znajdą się także stacje pomiarów laserowych.
+\cite[][strona 380]{hofmann_gnss}. Ponadto zaprojektowano także budowę lokalnych stacji obserwacyjnych kontrolujących niezawodność systemu.\\
+\indent System GALILEO ma być oparty na geocentrycznym układzie odniesienia GTRF\footnote{Galileo Terrestial Reference Frame}, który będzie powiązany z ITRF.
+Z załorzeń projektowych wynika, że różnica pomiędzy GTRF oraz ITRF nie może przekraczać trzech centymetrów na poziomie ufności 2$\sigma$.\\
+\indent Czas systemu GALILEO GST\footnote{Galileo System Time} będzie oparty na ciągłej skali czasu atomowego zsynchronizowanej z Międzynarodowym Czasem Atomowym TAI i
+podtrzymywanej za pomocą maserów wodorowych. System czasu GALILEO będzie używał korekt czasu pochodzących od zewnętrznych ośrodków takich jak Międzynarodowe 
+Biuro Miar i Wag w celu bezpośredniej synchronizacji z UTC. Maksymalna rónica midzy GST a czasem atomowym TAI ma nie przekraczać 50ns na poziomie ufności 95\%.\\
+\indent SErwisy Galileo
+
 	\subsection{Inne}
 	% trzeba opisac BaiDou-Compass oraz Indyjski IRNSS
 \section{Algorytmy Pozycjonowania}

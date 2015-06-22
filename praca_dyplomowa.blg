@@ -1,14 +1,16 @@
-[1] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'praca_dyplomowa.blg'
-[69] biber:277> INFO - === Sun Jun 21, 2015, 00:03:49
-[70] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
-[209] Biber.pm:635> INFO - Found 26 citekeys in bib section 0
-[251] Biber.pm:3051> INFO - Processing section 0
-[288] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
-[292] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[297] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[902] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[902] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[902] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
-[1091] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
-[1097] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
+[75] biber:277> INFO - === Mon Jun 22, 2015, 20:27:41
+[75] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
+[223] Biber.pm:635> INFO - Found 28 citekeys in bib section 0
+[268] Biber.pm:3051> INFO - Processing section 0
+[303] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[307] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[314] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[383] Utils.pm:144> WARN - I didn't find a database entry for 'wgs84_pe90' (section 0)
+[989] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[989] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[990] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
+[1194] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
+[1202] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
+[1202] Biber.pm:106> INFO - WARNINGS: 1

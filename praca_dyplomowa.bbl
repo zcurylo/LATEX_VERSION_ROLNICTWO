@@ -148,6 +148,28 @@
       \field{year}{2013}
       \field{pages}{7\bibrangedash 9}
     \endentry
+    \entry{glonass_geoforum}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=61150e8b0fefdcfa1db9e493d80f868b}{geoforum.pl}{g\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=61150e8b0fefdcfa1db9e493d80f868b}{geoforum.pl}{g\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{61150e8b0fefdcfa1db9e493d80f868b}
+      \strng{fullhash}{61150e8b0fefdcfa1db9e493d80f868b}
+      \field{sortinit}{g}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labeltitle}{glonas}
+      \field{month}{06}
+      \field{title}{glonas}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://geoforum.pl/?menu=46813,46834,47127&part=1&link=gnss-systemy-nawigacyjne-glonass#page_top
+      \endverb
+    \endentry
     \entry{GPS_GOV}{online}{}
       \name{labelname}{1}{}{%
         {{hash=d3c5cdc70637b77216497276418c89bc}{Government}{G\bibinitperiod}{Official\bibnamedelima U.S.}{O\bibinitperiod\bibinitdelim U\bibinitperiod}{}{}{}{}}%
@@ -608,6 +630,7 @@
       \field{pages}{951\bibrangedash 958}
     \endentry
   \endsortlist
+  \missing{wgs84_pe90}
 \endrefsection
 \endinput
 
