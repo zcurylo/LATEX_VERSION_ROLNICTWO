@@ -1,6 +1,7 @@
 ﻿W tym rozdziale omówione zostały podstawy teoretyczne dotyczące infrastruktury geodezyjnej niezbędnej do określania
 połorzenia punktów a zatem i obiektów w przestrzeni. Na początku zostały omówione zagadnienia dotyczące geodezji kosmicznej,
 której techniki zrewolucjonizowały możliwości człowieka w dziedzinie nawigacji tak bardzo istotnej dla rolnictwa precyzyjnego.
+W pracy zdecydowano się opisać tylko trzy najpopularniejsze systemy globalnego pozycjonowania.
 W dalszej części rozdziału opisano pokrótce algorytmy wyznaczania pozycji w nawigacji satelitarnej oraz inercjalnej, a tekże metodę 
 integracji tych dwóch jakże uzupełniających się technik. 
 
@@ -258,8 +259,8 @@ Ze względu na to, że system GALILEO nie jest jeszcze operacyjny (aktualnie 8 s
 \indent Segment kosmiczny systemu GALILEO docelowo ma się składać z 30 satelitów (27 + 3 zapasowe) po 9 satelitów operacyjnych na jedną płaszczyznę orbitalną.
 Inklinacje płaszczyzn mają wynosić 56\degree. Satelity będą się poruszały po orbitach prwie kołowych na wysokości 23616km równomiernie rozmieszczone co 40\degree w 
 płaszczyźnie orbity. Tak zaprojektowana konstelacja zapewnić ma globalną widoczność minimum 6 satelitów na wysokości powyżej 10\degree nad horyzontem.\\
-\indent Segmant naziemny systemu GALILEO został zaprojektowany tak aby składał się z części kontrolnej (kontrola oraz zarządzanie konstelacją satelitów) oraz 
-części operacyjnej, która ma odpowiadać za część nawigacyjną (depesze satelitów, kontrola danych, kontrola czasu oraz wiele innych). Warto nadmienić,
+\indent Segmant naziemny systemu GALILEO został zaprojektowany tak aby składał się z części kontrolnej stanu technicznego konstelacji satelitów oraz 
+części operacyjnej, która ma odpowiadać za całościowe funkcjonowanie systemu (depesze satelitów, kontrola danych, kontrola czasu oraz wiele innych). Warto nadmienić,
 że wśród stacji segmentu naziemnego oprócz klasycznej infrastruktury śledzącej satelity (kilkuczęstotliwościowe odbiorniki) znajdą się także stacje pomiarów laserowych.
 \cite[][strona 380]{hofmann_gnss}. Ponadto zaprojektowano także budowę lokalnych stacji obserwacyjnych kontrolujących niezawodność systemu.\\
 \indent System GALILEO ma być oparty na geocentrycznym układzie odniesienia GTRF\footnote{Galileo Terrestial Reference Frame}, który będzie powiązany z ITRF.
@@ -267,12 +268,41 @@ Z załorzeń projektowych wynika, że różnica pomiędzy GTRF oraz ITRF nie mo�
 \indent Czas systemu GALILEO GST\footnote{Galileo System Time} będzie oparty na ciągłej skali czasu atomowego zsynchronizowanej z Międzynarodowym Czasem Atomowym TAI i
 podtrzymywanej za pomocą maserów wodorowych. System czasu GALILEO będzie używał korekt czasu pochodzących od zewnętrznych ośrodków takich jak Międzynarodowe 
 Biuro Miar i Wag w celu bezpośredniej synchronizacji z UTC. Maksymalna rónica midzy GST a czasem atomowym TAI ma nie przekraczać 50ns na poziomie ufności 95\%.\\
-\indent SErwisy Galileo
-
-	\subsection{Inne}
-	% trzeba opisac BaiDou-Compass oraz Indyjski IRNSS
+\indent Podczas projektowania systemu GALILEO przyjęto podejście nastawione na serwisy jakich system ma dostarczać użytkownikom.
+Adekwatnie do potencjalnego zapotrzebowania na usługi wyróżniono następujące grupy:
+\begin{itemize}
+\item Serwis otwarty (OS) - dostępny dla wszystkich użytkowników bezpłatnie. Charakteryzuje się brakiem informacji na temat wiarygodności systemu.
+Przeznaczony jest do uzyskiwania pozycji oraz referencji czasowej nie wymagających wysokiej dokładności. Sześć jawnych kodów jest modulowanych na fale radiowe o 
+trzech częstotliwościach nośnych. Jednoczęstotliwościowe odbiorniki systemu GALILEO będą wyznaczać pozycję porównywalną z rozwiązaniem opartym o kod C/A GPS.
+\item Serwis komercyjny (CS) - różniący się od serwisu otwartego gwarancją dostępności oraz dostępem do dodatkowych szyfrowanych danych zawieranych w depeszy nawigacyjnej 
+propagowanej za pomocą modulacji sygnału na trzech częstotliwościach nośnych. 
+\item Serwis bezpieczeństwa życia (SoL) - bazuje na tych samych sygnałach co serwis otwarty. W tym trybie w depeszy nawigacyjnej zawarta będzie informacja o wiarygodności 
+systemu GALILEO. Jakiekolwiek awarie będą sygnalizowane odpowienimi ostrzeżeniami wysyłanymi do użytkownika.
+\item Serwis publiczny regulowany (PRS) - przeznaczony dla służb, agencji rządowych bądź innych podmiotów zajmujących się ochroną obywateli, obronnością oraz dbaniem o
+respektowanie prawa. Głównym celem serwisu jest dostarczanie silnego ciągłego oraz zakodowanego sygnału który będzie możliwy do użycia nawet w sytuacjach kryzysowych.
+Sygnał w tym serwisie będzie modulowany na dwie częstotliwości nośne aby zmaksymalizować odporność na interferencje przy jednoczesnej minimalizacji ryzyka celowych
+zakłóceń zewnętrznych. W serwisie tym będzie również dostępna informacja o wiarygodności systemu GALILEO.
+\item Serwis ratunkowy (SAR) - Serwis polage na wykrywaniu przez satelity systemu sygnałów ratunkowych (406Mhz), a następnie na przesyłaniu tej informacji do 
+centrum segmentu naziemnego, które ma za zadanie powiadomić odpowiednie służby.
+\end{itemize}
+\indent System GALILEO ma wykorzystywać trzy pasma częstotliwości fali radiowych L1, E5, E6 na których będzie możliwa modulacja dziesięciu różnych sygnałów.
+Rysunek \ref{fig:galileo_freq} przedstawia schemat przydziału częstotliwości nośnych poszczególnym sygnałom systemu GALILEO.
+Trzy sygnałý nawigacyjne modulowane na częstotliwości E1: Dwa nieszyfrowane sygnały E1B orax E1C dostępne dla wszystkich użytkowników. E1B oprócz wiadomości nawigacyjnej 
+prtzenosić ma szyfrowane dane komercyjne oraz informacje o wiarygodności. Kanał danych E1B oraz kanał pilotażowy E1C mają wspierać usługi otwartą, komercyjną oraz 
+usługę ratowania życia. Zaszyfrowany komponent E1A ma być dostępny tylko dla autoryzowanych użytkowników w serwisie (PRS) \cite[][strona 387]{hofmann_gnss}.
+Podobnie do pasma częstotliwości E1, pasmo E6 również ma być nośnikiem trzech sygnałów: E6A, E6B, E6C dostępnych komercyjnie. 
+Sygnał E6B ma być nosnikiem depeszy nawigacyjnej oraz szyfrowanych danych komercyjnych. Sygnał E6C ma być kanałem pilotażowym a E6A wspierać serwis regulowany (PRS)
+\cite[][strona 389]{hofmann_gnss}.
+Pasmo częstotliwości E5 jest nośnikiem czterech sygnałów. W pasmach E5a oraz E5b przenoszone są dwie pary: kanał danych plus kanał pilotażowy.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{chapter2_galileo_freq.eps}
+\caption{\textit{Schemat częstotliwości nośnych sygnałów systemu GALILEO} źródło: \protect\url{http://www.esa.int/spaceinimages/Images/2005/04/Galileo_signal_frequencies}}
+\label{fig:galileo_freq}
+\end{figure}
 \section{Algorytmy Pozycjonowania}
-	\subsection{DGPS}
+
+	\subsection{DGPS/DGNSS}
 	\subsection{RTK}
 	\subsection{PPP}
 \section{Nawigacja Inercjalna}
