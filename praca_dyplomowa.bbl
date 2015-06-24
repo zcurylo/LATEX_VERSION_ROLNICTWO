@@ -119,6 +119,25 @@
       \field{year}{2010}
       \field{pages}{11\bibrangedash 26}
     \endentry
+    \entry{TRIMBLE}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=db8c718ea7c3b9648b474323be04c8e4}{division}{d\bibinitperiod}{Trimble\bibnamedelima Agriculture}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=db8c718ea7c3b9648b474323be04c8e4}{division}{d\bibinitperiod}{Trimble\bibnamedelima Agriculture}{T\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{db8c718ea7c3b9648b474323be04c8e4}
+      \strng{fullhash}{db8c718ea7c3b9648b474323be04c8e4}
+      \field{sortinit}{d}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labeltitle}{Trimble T2 and T3 Technology}
+      \field{month}{06}
+      \field{title}{Trimble T2 and T3 Technology}
+      \field{urlday}{24}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+    \endentry
     \entry{donnelly}{inproceedings}{}
       \name{labelname}{7}{}{%
         {{hash=4163f78ab91e7ea040dde19c6405e0f7}{Donnelly}{D\bibinitperiod}{Nic}{N\bibinitperiod}{}{}{}{}}%
@@ -337,6 +356,27 @@
       \field{title}{Design of precision fertilization management information system on GPS and GIS technologies}
       \field{year}{2012}
       \field{pages}{268\bibrangedash 277}
+    \endentry
+    \entry{WGS84_PZ90}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=d47ace5482141e49b71470b9cc5452b4}{Misra}{M\bibinitperiod}{Pratap\bibnamedelima N}{P\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=27feca8ad533b4590cf17cf0e81f9784}{Abbot}{A\bibinitperiod}{Richard\bibnamedelima I}{R\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=c24cd43c03da2f557dfe0c15ea8d407d}{Gaposcbkin}{G\bibinitperiod}{EM}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=d47ace5482141e49b71470b9cc5452b4}{Misra}{M\bibinitperiod}{Pratap\bibnamedelima N}{P\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=27feca8ad533b4590cf17cf0e81f9784}{Abbot}{A\bibinitperiod}{Richard\bibnamedelima I}{R\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=c24cd43c03da2f557dfe0c15ea8d407d}{Gaposcbkin}{G\bibinitperiod}{EM}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7ce54eebd563837d05bc5488888f2ecc}
+      \strng{fullhash}{7ce54eebd563837d05bc5488888f2ecc}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Integrated Use of GPS and GLONASS: Transformation between WGS 84 and PZ-90}
+      \field{booktitle}{Proceedings of the 9th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GPS 1996)}
+      \field{title}{Integrated Use of GPS and GLONASS: Transformation between WGS 84 and PZ-90}
+      \field{year}{1996}
+      \field{pages}{307\bibrangedash 314}
     \endentry
     \entry{CLAAS_stearing_systems}{online}{}
       \name{labelname}{1}{}{%
@@ -630,7 +670,6 @@
       \field{pages}{951\bibrangedash 958}
     \endentry
   \endsortlist
-  \missing{wgs84_pe90}
 \endrefsection
 \endinput
 
