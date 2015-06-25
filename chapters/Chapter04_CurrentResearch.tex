@@ -15,13 +15,13 @@ Jeżeli jednak odbiornik utraci chociaż na moment sygnał do satelity, dokładn
 Nie spada jednak nigdy poniżej dokładności rozwiązania kodowego. Z poniższego rysunku wynika,
 że obserwacje GNSS charakteryzują się mniejszą rozdzielczością czasową niż obserwacje INS,
 ponadto mogą występować miejscowe pogorszenia dokładności lub w ekstremalnych przypadkach brak rozwiązania.
-- trzeba porównać charakterystyki szeregów czasowych z ciekawych danych INS vs GNSS
-GNSS – raczej nie wystepuja bledy systematyczne – brak dryftu, czasami dziury w rozwiazaniach, gorsza rozdzielczośc pomiarow. 
-INS – dryft który narasta w czasie, wysoka rozdzielczosc pomiarow, brak dziór w obserwacjach,
-Wniosek – integracja tych dwoch systemow jest super:)
-TODO trzeba tutaj rysunek wstawic :)
+%- trzeba porównać charakterystyki szeregów czasowych z ciekawych danych INS vs GNSS
+%GNSS – raczej nie wystepuja bledy systematyczne – brak dryftu, czasami dziury w rozwiazaniach, gorsza rozdzielczośc pomiarow. 
+%INS – dryft który narasta w czasie, wysoka rozdzielczosc pomiarow, brak dziór w obserwacjach,
+%Wniosek – integracja tych dwoch systemow jest super:)
+%TODO trzeba tutaj rysunek wstawic :)
 \section{Zintegrowane systemy pozycjonowania w czasie rzeczywistym}
----zastosowanie zintegrowanego systemu pozycjonowania w precyzyjnym nawożeniu.
+\subsection{Zastosowanie GNSS w precyzyjnym nawożeniu gleby}
 W artykule \cite{CCTA5_188_192} panowie Guobing Pan oraz Xiao Feng opisują zastosowanie zintegrowanego systemu bazującego na  systemie GPS w precyzyjnym nawozeniu roślin.
 Nawożenie ma czterdziesto procentowy wpływ na wielkość plonowania. Ponadto szalenie ważny jest stopień wykorzystania dawki nawozu przez rośliny.
 Dawkowanie nawozów charakteryzuje się zmiennością czasową związaną z różnymi etapami wzrostu rośliny oraz zmiennością przestrzenną w obrębie danego pola \cite{CCTA5_188_192}.
@@ -39,18 +39,19 @@ Powyższe dane poddawane są następnie poddane obrubce filtrem Kalmana w celu o
 Aktualna pozycja pojazdu oraz orientacja przestrzenna jest następnie wykorzystywana w celu obliczenia punktowej dawki nawozu
 oraz korekty potrzebnej systemowi sterowania do prowadzenia według zadanej ścieżki.
 
----Zbieranie danych o glebie i jej właściwościach na potrzeby systemu precyzyjnego dawkowania nawozów 
-opartego na technologi GIS przy użyciu systemu pozycjonowania GPS (DGPS, RTK)
-Systemy nawigacji satelitarnej pomagają w zwiększeniu rozdzielczości oraz dokładności danych przestrzennych
+%---Zbieranie danych o glebie i jej właściwościach na potrzeby systemu precyzyjnego dawkowania nawozów 
+%opartego na technologi GIS przy użyciu systemu pozycjonowania GPS (DGPS, RTK)
+\indent Systemy nawigacji satelitarnej pomagają w zwiększeniu rozdzielczości oraz dokładności danych przestrzennych
 dla potrzeb systemu dawkowania nawozów. Obecnie szybka akwizycja danych terenowych opisujących właściwości glebowo rolnicze pól uprawnych
 stanowi ważny aspekt badań nad rozwojem rolnictwa precyzyjnego. Zwiększenmie rozdzielczoąci prubkowania jest możliwe dzięki
 dynamicznemu rozwojowi nawigacji w czasie rzeczywistym (RTK, DGPS) zwłaszcza poprzez lokalne systemy stacji referencyjnych ASG-EUPOS.
 Dla przykładu im wyższa jest rozdzielczość prubkowania, tym dokładniejsza jest interpolacja danych 
 (ph, fizyko chemiczne właściwości gleby itp, określana przez system GIS) na potrzeby określania dawek nawozów.
-Posumowując ten artykuł: Dane przestrzwenne zbierane były za pomocą DGPS z wykorzystaniem lokalnych stacji referencyjnych.
-Następnie wyniki pomiarów parametrów glebowych były wprowadzane do GIS-owej bazy danych. Na podstawie zebranych danych były tworzone mapy nawożenia \cite{CCTA5_268_278}.
+Posumowując: Dane przestrzwenne zbierane były za pomocą DGPS z wykorzystaniem lokalnych stacji referencyjnych.
+Następnie wyniki pomiarów parametrów glebowych były wprowadzane do GIS-owej bazy danych.
+Na podstawie zebranych danych były tworzone mapy nawożenia \cite{CCTA5_268_278}.
 
----Tani System równoległego prowadzenia pojazdów rolniczych oparty na filtrze Kalmana.
+\subsection{Algorytmy wyznaczania pozycji oparte na filtrze Kalmana}
 Prowadzenie równoległe jest jedną z najbardziej popularnych obecnie metod ułatwiających prace polowe.
 W pracy \cite{CCTA5_461_469} czytamy, że przeprowadzono już wiele badań nad zastosowaniem bardzo dokładnych odbiorników fazowych RTK-GPS
 przy automatyzacji maszyn rolniczych. Autorzy twierdzą jednak, że koszt precyzyjnych odbiorników GPS jest zbyt wysoki
@@ -72,11 +73,11 @@ Całkowity koszt systemu wyniósł w przybliżeniu około 1500\$.
 RTK-GPS był używany jako odniesienie w celu porównania otrzymanych wyników. 
 Współrzędne w lokalnym układzie odniesienia, azymut, oraz prędkość były zadane jako wektor stanu w filtrze Kalmana.
 Wyniki eksperymentu pokazały, że obróbka danych przestrzennych za pomocą filtru Kalmana znacznie podnosi dokładność wspólrzędnych DGPS.
-Średnie residua w odniesieniu do pozycji RTK zostały zredukowane z 2.21m do 0.52m względem osi x oraz z 0.68m do 0.23m względem osi y.
-Jednakże zaimplementowany algorytm nie usunął całkowicie błędów systematycznych zawartych w danych DGPS.
+Średnie residua w odniesieniu do pozycji GNSS zostały zredukowane z 2.21m do 0.52m względem osi x oraz z 0.68m do 0.23m względem osi y.
+Jednakże zaimplementowany algorytm nie usunął całkowicie błędów systematycznych zawartych w danych kodowych DGPS.
 Maksymalna odchyłka od równoegłości po przebyciu 70 m wyniosła 3m \cite{CCTA5_461_469}.
 
---- Integracja danych RTK-GPS z elektronicznym kompasem oraz obrazowaniem cyfrowym z urzyciem logiki rozmytej (Fuzzy logic).
+\indent Kolejnym przykładem fuzji danych jest integracja danych RTK-GPS z elektronicznym kompasem oraz obrazowaniem cyfrowym z urzyciem logiki rozmytej (Fuzzy logic).
 W artykule pod tytułem “Automatic Navigation System With Multiple Sensors” panowie Wan oraz Liu
 opisali system automatycznego prowadzenia pojazdów rolniczych bazujący na integracji obserwacji pochodzących z elektronicznego kompasu,
 odbiornika GPS oraz kamery cyfrowej z matrycą CCD. W celu obliczenia parametrów prowadzenia pojazdu względem zadanej trasy,
@@ -84,18 +85,18 @@ dane z wszystkich powyższych mierników były przetwarzane z użyciem narzędzi
 Poniżej na rysunku nr \ref{fig:ch4_fuzzyLogic} przedstawiono diagram blokowy opisujący algorytm integracji danych.
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm, height=7cm]{ch4_fuzzyLogic.eps}
+\includegraphics[width=7cm, height=6cm]{ch4_fuzzyLogic.eps}
 \caption{\textit{Zastosowanie narzędzi logiki rozmytej do integracji danych nawigacyjnych;}
 źródło: \cite[][strona 774]{CCTA_769_775}}
 \label{fig:ch4_fuzzyLogic}
 \end{figure}
 
 Azymut kierunku jazdy względem zadanej ścieżki oraz ofset oznaczono odpowiednio jako $\theta$ oraz d.
-Wszystkie powyższe rezultaty pośrednie zanim przesłano do modułów logiki rozmytej przetransformowano do układu obrazu cyfrowego,
+Wszystkie powyższe rezultaty pośrednie zanim przesłano do modułów logiki rozmytej, przetransformowano do układu obrazu cyfrowego,
 w celu zapewnienia jednolitego układu odniesienia. Jako ostateczną i najbardziej prawdopodobną wersję parametrów $(d, \theta )$
 przyjęto wyniki z modułu numer 2 (parameters 3), pozostałe rezultaty posłużyły do wybrania jak najlepszych współczynników skalowania obserwacji
 w modułach wykorzystujących logikę rozmytą. Na podstawie parametrów określających położenie pojazdu względem zdefiniowanej uprzednio trasy
-obliczany był teoretyczny kąt skrętu kół, przekazywany następnie do realizacji w układzie sterującym (target angle), patrz rysunek \ref{fig:ch4_fuzzyLogicTargetAngle}.
+obliczany był teoretyczny kąt skrętu kół, przekazywany następnie do realizacji w układzie sterującym (target angle), rysunek \ref{fig:ch4_fuzzyLogicTargetAngle}.
 \begin{figure}[H]
 \centering
 \includegraphics[height=4cm]{ch4_fuzzyLogicTargetAngle.eps}
@@ -103,10 +104,10 @@ obliczany był teoretyczny kąt skrętu kół, przekazywany następnie do realiz
 	źródło: \cite[][strona 775]{CCTA_769_775}}
 \label{fig:ch4_fuzzyLogicTargetAngle}
 \end{figure}
-System sterujący realizował swoje zadania w oparciu o algorytm PID - regulator proporcjonalno-całkująco - różniczkujący.
+System sterujący realizował swoje zadania w oparciu o algorytm PID - regulator proporcjonalno - całkująco - różniczkujący.
 Według autorów pracy \cite{CCTA_769_775} opisany system spełnia wymagania automatycznego prowadzenia maszyn rolniczych w warunkach roboczych.
 \section{Spegcjalistyczne opracowanie obserwacji - postprocessing}
---- szczególnie ważny z punktu widzenia opracowania map plonowania.
+Opracowanie obserwacji w trybie postrocessingu jest szczególnie ważne z punktu widzenia opracowania map plonowania.
 Pan Xiaochao Zhang wraz z zespołem w artykule \cite{CCTA_951_958} opisali konstrukcję systemu służącego do tworzenia map plonowania.
 Głównym elementem systemu był poziomo umieszczony czujnik mierzący masę przepływającego ziarna.
 Surowe wyniki były poprawiane ze względu na wilgotność, a następnie zamieniane na ilość ziarna przez algorytm całkujący.
@@ -123,10 +124,10 @@ Poniższy rysunek \ref{fig:ch4_creatingPlantsMap} przedstawia działający syste
 Mapy plonów są ważnym źródłem informacji dla rolników. Pomagają w planowaniu zabiegów agrotechnicznych.
 
 \section{Inne zastosowania GNSS w rolnictwie precyzyjnym}
---- pomiary pól powierzchni na potrzeby rolnictwa precyzyjnego
-	( Computer and Computing Technologies in Agriculture; volume 2; s. 993)
+%--- pomiary pól powierzchni na potrzeby rolnictwa precyzyjnego
+%	( Computer and Computing Technologies in Agriculture; volume 2; s. 993)
 
---- zastosowanie GPS w automatycznym zmiennym nawadnianiu 
+%--- zastosowanie GPS w automatycznym zmiennym nawadnianiu 
 Celem precyzyjnego nawadniania jest minimalizacja użycia zasobów wodnych, przy załorzeniu  spełnienia w jak największym stopniu wymagań roślin uprawnych.
 Dystrybucja przestrzenna wymagań roślinnych względem ilości dodatkowego nawadniania, zależy głównie od warunków glebowych oraz topografii terenu.
 Dlatego zasadnym jest przeprowadzanie nawadniania pól uprawnych, zgodnie z wcześniej sporządzanymi mapami docelowego rozkładu przestrzennego dawek H2O 
@@ -144,8 +145,4 @@ który pozwala na określenie jej pozycji przestrzennej i obliczenie dawki H2O. 
 o zadany wektor względem pierwszej, przy załorzeniu, że ramię systemu jest zawsze prostopadłe do kierunku ruchu.
 Mapy nawadniania tworzone były na podstawie danych o wilgotności gleby oraz powietrza zbieranych za pomocą sieci czujników
 równomiernie rozmieszczonych na polu uprawnym. 
-
-
-
-
 

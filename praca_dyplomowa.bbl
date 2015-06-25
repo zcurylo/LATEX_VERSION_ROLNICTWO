@@ -378,6 +378,28 @@
       \field{year}{1996}
       \field{pages}{307\bibrangedash 314}
     \endentry
+    \entry{ARIMR}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d0d0f3f58868024d153f676078110cb4}{Modernizacji\bibnamedelima Rolnictwa}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{Agencja\bibnamedelima Restrukturyzacji}{A\bibinitperiod\bibinitdelim R\bibinitperiod}{i}{i\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d0d0f3f58868024d153f676078110cb4}{Modernizacji\bibnamedelima Rolnictwa}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{Agencja\bibnamedelima Restrukturyzacji}{A\bibinitperiod\bibinitdelim R\bibinitperiod}{i}{i\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{d0d0f3f58868024d153f676078110cb4}
+      \strng{fullhash}{d0d0f3f58868024d153f676078110cb4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Średnia powierzchnia gospodarstwa}
+      \field{month}{06}
+      \field{title}{Średnia powierzchnia gospodarstwa}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.arimr.gov.pl/dla-beneficjenta/srednia-powierzchnia-gospodarstwa.html
+      \endverb
+    \endentry
     \entry{CLAAS_stearing_systems}{online}{}
       \name{labelname}{1}{}{%
         {{hash=706b5ebd7f6312da2f8486340ad53964}{o.}{o\bibinitperiod}{CLAAS\bibnamedelimb Polska\bibnamedelima Sp.}{C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}{z\bibnamedelima o.}{z\bibinitperiod\bibinitdelim o\bibinitperiod}{}{}}%

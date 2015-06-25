@@ -1,16 +1,16 @@
 [0] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'praca_dyplomowa.blg'
-[67] biber:277> INFO - === Wed Jun 24, 2015, 23:36:43
-[67] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
-[206] Biber.pm:635> INFO - Found 29 citekeys in bib section 0
-[248] Biber.pm:3051> INFO - Processing section 0
-[284] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
-[288] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[294] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[368] Utils.pm:144> WARN - The field 'url' in entry 'TRIMBLE' cannot be null, deleting it
-[965] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[965] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[967] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
-[1180] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
-[1186] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
-[1187] Biber.pm:106> INFO - WARNINGS: 1
+[70] biber:277> INFO - === Thu Jun 25, 2015, 13:09:53
+[70] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
+[211] Biber.pm:635> INFO - Found 30 citekeys in bib section 0
+[255] Biber.pm:3051> INFO - Processing section 0
+[291] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[296] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[302] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[385] Utils.pm:144> WARN - The field 'url' in entry 'TRIMBLE' cannot be null, deleting it
+[1024] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1024] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1025] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
+[1260] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
+[1269] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
+[1269] Biber.pm:106> INFO - WARNINGS: 1
