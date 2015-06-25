@@ -52,26 +52,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Wykorzystanie GNSS}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Zastosowanie system\IeC {\'o}w inercjalnych}{19}
+\contentsline {section}{\numberline {5.2}Zastosowanie system\IeC {\'o}w inercjalnych}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Zastosowanie sensor\IeC {\'o}w video}{20}
+\contentsline {section}{\numberline {5.3}Zastosowanie sensor\IeC {\'o}w video}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Perspektywy rozwoju oraz wnioski}{23}
+\contentsline {chapter}{\numberline {6}Perspektywy rozwoju oraz wnioski}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}p}{23}
+\contentsline {section}{\numberline {6.1}p}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}w}{23}
+\contentsline {section}{\numberline {6.2}w}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Dodatek}{24}
+\contentsline {chapter}{\numberline {A}Dodatek}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}VLBI}{24}
+\contentsline {section}{\numberline {A.1}VLBI}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}DORIS}{25}
+\contentsline {section}{\numberline {A.2}DORIS}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}SLR}{27}
+\contentsline {section}{\numberline {A.3}SLR}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}LLR}{27}
+\contentsline {section}{\numberline {A.4}LLR}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad w rozw\IeC {\'o}j \IeC {\'s}wiatowej geodezji i nawigacji}{27}
+\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad w rozw\IeC {\'o}j \IeC {\'s}wiatowej geodezji i nawigacji}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{30}
+\contentsline {chapter}{Bibliografia}{31}
