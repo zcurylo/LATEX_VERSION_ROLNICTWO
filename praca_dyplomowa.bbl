@@ -19,6 +19,28 @@
 
 \refsection{0}
   \sortlist{nyt}{nyt}
+    \entry{EGNOS}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=7949d196b50c746c0ee48dcabdc9a0ae}{Agency}{A\bibinitperiod}{European\bibnamedelima GNSS}{E\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7949d196b50c746c0ee48dcabdc9a0ae}{Agency}{A\bibinitperiod}{European\bibnamedelima GNSS}{E\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7949d196b50c746c0ee48dcabdc9a0ae}
+      \strng{fullhash}{7949d196b50c746c0ee48dcabdc9a0ae}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labeltitle}{EGNOS Open Service (OS) Service Definition Document}
+      \field{month}{06}
+      \field{title}{EGNOS Open Service (OS) Service Definition Document}
+      \field{urlday}{23}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://egnos-user-support.essp-sas.eu/new_egnos_ops/sites/default/files/library/official_docs/egnos_os_sdd_v2_2.pdf
+      \endverb
+    \endentry
     \entry{NEW_HOLLAND_PLM}{online}{}
       \name{labelname}{1}{}{%
         {{hash=c15bed8304cfe586101c898ab9dc2ebc}{Agriculture}{A\bibinitperiod}{New\bibnamedelima Holland}{N\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
@@ -64,6 +86,22 @@
       \field{volume}{83}
       \field{year}{2009}
       \field{pages}{375\bibrangedash 383}
+    \endentry
+    \entry{BANIA}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=1546b583a4380359f8716b9936b24d1c}{Bania}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1546b583a4380359f8716b9936b24d1c}{Bania}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1546b583a4380359f8716b9936b24d1c}
+      \strng{fullhash}{1546b583a4380359f8716b9936b24d1c}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labeltitle}{Algorytmy sterowania optymalnego w nieliniowej regulacji predykcyjnej}
+      \field{journaltitle}{Rozprawa doktorska. AGH Krak{ó}w}
+      \field{title}{Algorytmy sterowania optymalnego w nieliniowej regulacji predykcyjnej}
+      \field{year}{2008}
     \endentry
     \entry{BOROWIEC}{online}{}
       \name{labelname}{1}{}{%
@@ -272,6 +310,39 @@
       \field{labeltitle}{A guide to using International GNSS Service (IGS) products}
       \field{title}{A guide to using International GNSS Service (IGS) products}
       \field{year}{2009}
+    \endentry
+    \entry{KRAUS}{article}{}
+      \name{labelname}{7}{}{%
+        {{hash=e10a419fa9fb2bf14bc4bee9b8542c59}{Kraus}{K\bibinitperiod}{Tom}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=c4c4ad7d4c7eae01d43733b880b85f7a}{Ferreau}{F\bibinitperiod}{Hans\bibnamedelima Joachim}{H\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=ca5842dd522f6333ec701f9978730fe7}{Kayacan}{K\bibinitperiod}{Erdal}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=ca937f6079b6873a8a7a0931ea8c16cc}{Ramon}{R\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=ffef81faa5062a62fdedd9408b323a74}{De\bibnamedelima Baerdemaeker}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8788f23bb6883351e83deed5afeb80a1}{Diehl}{D\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b5f96e61375fe650d8fef7b332fe4c15}{Saeys}{S\bibinitperiod}{W}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=e10a419fa9fb2bf14bc4bee9b8542c59}{Kraus}{K\bibinitperiod}{Tom}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=c4c4ad7d4c7eae01d43733b880b85f7a}{Ferreau}{F\bibinitperiod}{Hans\bibnamedelima Joachim}{H\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=ca5842dd522f6333ec701f9978730fe7}{Kayacan}{K\bibinitperiod}{Erdal}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=ca937f6079b6873a8a7a0931ea8c16cc}{Ramon}{R\bibinitperiod}{H}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=ffef81faa5062a62fdedd9408b323a74}{De\bibnamedelima Baerdemaeker}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=8788f23bb6883351e83deed5afeb80a1}{Diehl}{D\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b5f96e61375fe650d8fef7b332fe4c15}{Saeys}{S\bibinitperiod}{W}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bc589eb4d4c48cbcb97dbb191b352cb8}
+      \strng{fullhash}{e2aa2e322ea9002c8e9509a9dcf1436a}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Moving horizon estimation and nonlinear model predictive control for autonomous agricultural vehicles}
+      \field{journaltitle}{Computers and electronics in agriculture}
+      \field{title}{Moving horizon estimation and nonlinear model predictive control for autonomous agricultural vehicles}
+      \field{volume}{98}
+      \field{year}{2013}
+      \field{pages}{25\bibrangedash 33}
     \endentry
     \entry{KRYNSKI_SYSTEMY}{article}{}
       \name{labelname}{2}{}{%

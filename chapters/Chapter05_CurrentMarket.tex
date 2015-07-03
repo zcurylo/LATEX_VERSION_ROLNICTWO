@@ -14,7 +14,7 @@ przez firmy refereujące o swoich produktach. Z reguły gdy w broszurach podawan
 W przypadku wyznaczania pozycji poziom ufności bezpośrednio określa prawdopodobieństwo zawarcia wartości prawdziwej (prawdziwe położenie) w okręgu o środku w punkcie 
 estymowanym i promieniu równym odpowiednio: 1$\sigma$ P=68\%; 2$\sigma$ P=95\%; 3$\sigma$ P=99.7\%, gdzie $\sigma$ oznacza odchylenie standardowe estymowanej pozycji.}
 oraz czy jest to dokładność w sensie absolutnym czy może dokładność podawana jest relatywnie w stosunku do kolejnych wyznaczeń tym samym odbiornikiem - tzw.
-dokładnośc między-przejazdowa (pass to pass accuracy). Typ uzyskiwanej dokładności - relatywna czy absolutna rzutuje bezpośrednio na rodzaj zabiegów 
+dokładnośc między-przejazdowa (pass to pass accuracy). Typ uzyskiwanej dokładności - względna czy absolutna rzutuje bezpośrednio na rodzaj zabiegów 
 agrotechnicznych, które możemy wykonywać. Dla przykładu przy zakładaniu ścieżek przejazdowych, które mają służyć przez cały sezon wegetacyjny potrzebna 
 jest wysoka dokładność w sensie absolutnym, natomiast w celu eliminacji omijaków bądź nakładek przy zabiegach agrotechnicznych wystarczy dokładność między-przejazdowa.
 Aby uniknąć nieporozumień nacisk połorzono na porównanie wykorzystywanych technologii. Wszędzie tam gdzie w broszurach marketingowych nie wyspecyfikowano typu 
@@ -49,13 +49,14 @@ NH 372 przedstawiony na rysunku \ref{fig:new_holland_nh372}.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%EGNOS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \indent Jeżeli weźmiemy pod uwagę publicznie dostępne systemy augmentacyjne GNSS, to europejski system EGNOS jest wykorzystywany 
-przez firmy Class oraz New Holland Agriculture. Ponadto firm New Holland oferuje zbliżony dokładnością do systemu EGNOS sygnał korekcyjny OmniStar VBS rysunek
+przez firmy Class oraz New Holland Agriculture. Ponadto firma New Holland oferuje zbliżony dokładnością do systemu EGNOS sygnał korekcyjny OmniStar VBS rysunek
 \ref{fig:omnistar_vbs}. Firma John Deere dostarcza swojego własnego rozwiązania w postaci sygnału 
-korekcyjnego SF1. Absolutna dokładność rozwiązania GNSS z sygnałem korekcyjnym EGNOS jest na poziomie trzech metrów (2$\sigma$).
+korekcyjnego SF1. Absolutna dokładność rozwiązania GNSS z sygnałem korekcyjnym EGNOS jest na poziomie trzech metrów (2$\sigma$) \cite[]{EGNOS}.
 Ponieważ, firmy zalecają używanie GNSS z sygnałem korekcyjnym EGNOS do prowadzenia prac uprawowych, w których powtarzalność przejazdów nie 
-ma istotnego znaczenia, zatem w ofercie prezentują dokładność relatywną na poziomie $\pm$30cm. Relatywna dokładność GNSS z sygnałem korekcyjnym SF1 od John Deere 
-jest podawana na poziomie $\pm$23cm. System EGNOS transmituje poprawki różnicowe dla częstotliwości L1 sygnału GPS za pomocą łącza satelitarnego. Działanie systemu 
-przedstawia poniższy rysunek \ref{fig:class_egnos}.
+ma istotnego znaczenia, zatem w ofercie prezentują dokładność względną (krótkookresową) na poziomie $\pm$30cm. Względna (krótkookresowa) dokładność GNSS z sygnałem
+korekcyjnym SF1 od John Deere jest podawana na poziomie $\pm$23cm. System EGNOS transmituje poprawki różnicowe dla częstotliwości L1 sygnału GPS za pomocą łącza satelitarnego.
+Działanie systemu przedstawia rysunek \ref{fig:class_egnos}. Dokładność międzyprzejazdowa na poziomie około 20cm pozwala na wykonywanie takich prac agrotechnicznych 
+jak nawożenie, uprawa gleby czy wszelkie czynności związane z ochroną roślin \cite[][strona 28]{CLAAS_stearing_systems}.
 \begin{figure}[H]
 \centering
         \begin{subfigure}{0.4\textwidth}
@@ -70,10 +71,10 @@ przedstawia poniższy rysunek \ref{fig:class_egnos}.
                 \caption{\textit{Zasada działania systemu EGNOS według Class} źródło \cite[][strona 26]{CLAAS_stearing_systems}}
                 \label{fig:class_egnos}
         \end{subfigure}
-\caption{Wykorzystanie sygnału korekcyjnego niskiej jakości}
+\caption{Wykorzystanie jednoczęstotliwościowego sygnału korekcyjnego}
 \end{figure}
 \indent 
-
+ 
 \section{Zastosowanie systemów inercjalnych}
 Na podstawie analizy ofert marketingowych firm z grupy przyjętej za referencyjną, można wywnioskować, że systemy nawigacji inercjalnej 
 są wykorzystywane na potrzeby budowy systemów służących do kompensacji nierówności terenu przy precyzyjnym prowadzeniu maszyn rolniczych.

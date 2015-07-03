@@ -29,7 +29,48 @@ zaproponowali algorytm, który korzysta tylko z obliczanego w czasie rzeczywisty
 \label{fig:ch3_currentNextTargetPosition}
 \end{figure}
 
+\indent W przypadku trudnych warunków pogodowych bądź obecności innych czynników powodujących poślizg kół pojazdu wymagana 
+jest estymacja współczynników korygujących wyniki algorytmu sterującego \cite[]{KRAUS}. Poniższy rysunek \ref{fig:side_forward_slip} ilustruje modelowanie 
+poślizgu w płaszczyznach: poprzecznej oraz podłużnej.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width= 1.2\linewidth]{ch3_effective_stearing_angle.eps}
+  \caption{Schemat przedstawiający zaadaptowanie modelu pojazdu jednosiowego z poślizgiem bocznym (w postaci zmiany kąta sterującego), do opisu ciągnika rolniczego}
+  \label{fig:side_slip}
+\end{subfigure}
+\hspace{2cm}
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width= 1.2\linewidth]{ch3_effective_wheel_speed.eps}
+  \caption{Modelowanie poślizgu ciągnika w płaszczyźnie podłużnej}
+  \label{fig:longitudinal_slip}
+\end{subfigure}
+\caption{\textit{Estymacja parametrów $\kappa$ oraz $\mu$ pozwalających na poprawne prowadzenie pojazdu w warunkach obecności poślizgu.}
+źródło powyższych rysunków: \cite[][strona 26]{KRAUS}}
+\label{fig:side_forward_slip}
+\end{figure}
+
 \section{Podział algorytmów sterowania ze względu na zastosowane algorytmy decyzyjne}
 Różnego rodzaju algorytmy sterowania są używane w celu kompencacji zmiennej dynamiki pojazdów oraz w celu osiągnięcia satysfakcjonującej wydajności sterowania
- \cite[][strona 770]{CCTA_769_775}. Poniżej znajdują się przykłady kilku najbardziej popularnych algorytmów prowadzenia pojazdów:
-feedforward plus PID steering control algorithm
+ \cite[][strona 770]{CCTA_769_775}. Poniżej znajdują się przykłady kilku najbardziej popularnych algorytmów prowadzenia pojazdów.
+
+\begin{wrapfigure}[15]{o}[20pt]{8cm}
+	\centering
+	\includegraphics[scale = 0.9]{ch3_MHE_NMPC_estimation.eps}
+	\caption{\textit{Schemat blokowy zaawansowanego algorytmu prowadzenia pojazdu dostosowanego do występowania poślizgu kół.}
+	źródło \cite[][strona 30]{KRAUS}}
+	\label{fig:MHE_NMPC_diagram}
+\end{wrapfigure}
+\indent W pracy \cite[]{KRAUS} Tom Kraus wraz z współpracownikami opisali zaawansowany matematycznie algorytm wyznaczania parametrów prowadzenia 
+ciągnika rolniczego - zmiany kąta sterowania oraz prędkości kątowej kół pojazdu, przy użyciu estymacji z przesówanym oknem czasowym (MHE\footnote{
+Moving Horizon Estimation}) oraz nieliniowym modelem predykcyjnego sterowania (NMPC\footnote{Nonlinear Model Predictive Control}).
+Wektor stanu poruszającego się obiektu, zawierający niewiadome $\kappa$, $\mu$ opisujące poślizg \ref{fig:side_forward_slip}, oraz orientację,
+estymowany był za pomocą algorytmu MHE. Na podstawie znajomości aktualnego stanu obiektu oraz trasy referencyjnej algorytm predykcyjny NMPC wyznaczał wynikowe parametry 
+prowadzenia pojazdu \cite[][strona 30]{KRAUS}. Rysunek \ref{fig:MHE_NMPC_diagram} przedstawia schemat blokowy opisanego algorytmu. 
+Sterowanie predykcyjne z przesówanym oknem czasowym, polega na cyklicznym rozwiązywaniu zadania sterowania optymalnego, z warunkiem początkowym 
+równym aktualnej estymacie stanu obiektu \cite[][strona 2]{BANIA}. Predykcja przyszłych stanów obiektu sterowanego na podstawie nieliniowych równań różniczkowych jest możliwa 
+tylko w stosunkowo krótkim oknie czasowym przyjmowanym arbitralnie - stąd nazwa metody.
+

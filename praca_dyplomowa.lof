@@ -24,44 +24,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Tylko offset - w przypadku niskiej jako\IeC {\'s}ci danych wej\IeC {\'s}ciowych;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 947]{CCTA_943_950}\relax }}{13}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \textit {Estymacja parametr\IeC {\'o}w $\kappa $ oraz $\mu $ pozwalaj\IeC {\k a}cych na poprawne prowadzenie pojazdu w warunkach obecno\IeC {\'s}ci po\IeC {\'s}lizgu.} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o powy\IeC {\.z}szych rysunk\IeC {\'o}w: \cite [][strona 26]{KRAUS}\relax }}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {Przyk\IeC {\l }ad zintergrowanego systemu do r\IeC {\'o}wnoleg\IeC {\l }ego prowadzenia;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 464]{CCTA5_461_469}\relax }}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \textit {Zastosowanie narz\IeC {\k e}dzi logiki rozmytej do integracji danych nawigacyjnych;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 774]{CCTA_769_775}\relax }}{16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \textit {Schemat algorytmu znajduj\IeC {\k a}cego odpowiedni k\IeC {\k a}t skr\IeC {\k e}tu k\IeC {\'o}\IeC {\l } pojazdu rolniczego;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 775]{CCTA_769_775}\relax }}{17}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \textit {System do tworzenia map plonowania;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 954]{CCTA_951_958}\relax }}{18}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \textit {Schemat systemu s\IeC {\l }u\IeC {\.z}\IeC {\k a}cego do automatycznego nawadniania p\IeC {\'o}l uprawnych;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 04]{PA_RemoteIrrigation}\relax }}{18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \textit {Schemat blokowy zaawansowanego algorytmu prowadzenia pojazdu dostosowanego do wyst\IeC {\k e}powania po\IeC {\'s}lizgu k\IeC {\'o}\IeC {\l }.} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o \cite [][strona 30]{KRAUS}\relax }}{14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Przegl\IeC {\k a}d komercyjnych odbiornik\IeC {\'o}w GNSS\relax }}{20}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {Przyk\IeC {\l }ad zintergrowanego systemu do r\IeC {\'o}wnoleg\IeC {\l }ego prowadzenia;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 464]{CCTA5_461_469}\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Wykorzystanie sygna\IeC {\l }u korekcyjnego niskiej jako\IeC {\'s}ci\relax }}{20}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \textit {Zastosowanie narz\IeC {\k e}dzi logiki rozmytej do integracji danych nawigacyjnych;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 774]{CCTA_769_775}\relax }}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \textit {Kompensacja wp\IeC {\l }ywu nier\IeC {\'o}wno\IeC {\'s}ci terenu na pozycj\IeC {\k e} GNSS}\relax }}{21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \textit {Schemat algorytmu znajduj\IeC {\k a}cego odpowiedni k\IeC {\k a}t skr\IeC {\k e}tu k\IeC {\'o}\IeC {\l } pojazdu rolniczego;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 775]{CCTA_769_775}\relax }}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Komputer do nawigacji Class z wmontowanymi sensorami do kompensacji nier\IeC {\'o}wno\IeC {\'s}ci terenu\relax }}{21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \textit {System do tworzenia map plonowania;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 954]{CCTA_951_958}\relax }}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Systemy bazuj\IeC {\k a}ce na sensorach wideo marki CLASS\relax }}{22}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \textit {Schemat systemu s\IeC {\l }u\IeC {\.z}\IeC {\k a}cego do automatycznego nawadniania p\IeC {\'o}l uprawnych;} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 04]{PA_RemoteIrrigation}\relax }}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces System SMARTSTEER firmy New Holland Agriculture\relax }}{22}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Przegl\IeC {\k a}d komercyjnych odbiornik\IeC {\'o}w GNSS\relax }}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Wykorzystanie jednocz\IeC {\k e}stotliwo\IeC {\'s}ciowego sygna\IeC {\l }u korekcyjnego\relax }}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \textit {Kompensacja wp\IeC {\l }ywu nier\IeC {\'o}wno\IeC {\'s}ci terenu na pozycj\IeC {\k e} GNSS}\relax }}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Komputer do nawigacji Class z wmontowanymi sensorami do kompensacji nier\IeC {\'o}wno\IeC {\'s}ci terenu\relax }}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Systemy bazuj\IeC {\k a}ce na sensorach wideo marki CLASS\relax }}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces System SMARTSTEER firmy New Holland Agriculture\relax }}{24}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces \textit {Antena VLBI o \IeC {\'s}rednicy 32 metr\IeC {\'o}w w mie\IeC {\'s}cie Tsukuba, Japonia.} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 28]{ggos}\relax }}{25}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces \textit {Antena VLBI o \IeC {\'s}rednicy 32 metr\IeC {\'o}w w mie\IeC {\'s}cie Tsukuba, Japonia.} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite [][strona 28]{ggos}\relax }}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces \textit {Zasada dzia\IeC {\l }ania Interferometrii D\IeC {\l }ugich Baz} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://www.mpifr-bonn.mpg.de/technologie/vlbi}\relax }}{26}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces \textit {Zasada dzia\IeC {\l }ania Interferometrii D\IeC {\l }ugich Baz} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://www.mpifr-bonn.mpg.de/technologie/vlbi}\relax }}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces \textit {Komponenty systemu DORIS} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://smsc.cnes.fr/DORIS/GP_systeme.htm}\relax }}{27}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces \textit {Komponenty systemu DORIS} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://smsc.cnes.fr/DORIS/GP_systeme.htm}\relax }}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces \textit {Mapa aktualnej infrastruktury naziemnej systemu DORIS} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://ids-doris.org/network/maps.html}\relax }}{27}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces \textit {Mapa aktualnej infrastruktury naziemnej systemu DORIS} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://ids-doris.org/network/maps.html}\relax }}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces \textit {Nocne pomiary do ksi\IeC {\k e}zyca w obserwatorium NASA na stacji GGAO/GSFC w Greenbelt, Maryland, USA} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://space-geodesy.gsfc.nasa.gov/multimedia/GeodesyNetwork/GeodesyNetworkImages.html}\relax }}{28}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces \textit {Nocne pomiary do ksi\IeC {\k e}zyca w obserwatorium NASA na stacji GGAO/GSFC w Greenbelt, Maryland, USA} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \url {http://space-geodesy.gsfc.nasa.gov/multimedia/GeodesyNetwork/GeodesyNetworkImages.html}\relax }}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces \textit {Rysunek przedstawia polsk\IeC {\k a} stacj\IeC {\k e} VLBI w Piwnicach ko\IeC {\l }o Torunia wraz z jej radioteleskopem} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite []{vlbi_torun_katedra}\relax }}{29}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces \textit {Rysunek przedstawia polsk\IeC {\k a} stacj\IeC {\k e} VLBI w Piwnicach ko\IeC {\l }o Torunia wraz z jej radioteleskopem} \IeC {\'z}r\IeC {\'o}d\IeC {\l }o: \cite []{vlbi_torun_katedra}\relax }}{30}
