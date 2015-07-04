@@ -32,46 +32,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Algorytmy sterowania}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Podzia\IeC {\l } algorytm\IeC {\'o}w sterowania ze wzgl\IeC {\k e}du na dostarczane dane wej\IeC {\'s}ciowe}{12}
+\contentsline {section}{\numberline {3.1}Podzia\IeC {\l } algorytm\IeC {\'o}w sterowania ze wzgl\IeC {\k e}du na dostarczane dane wej\IeC {\'s}ciowe}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Podzia\IeC {\l } algorytm\IeC {\'o}w sterowania ze wzgl\IeC {\k e}du na zastosowane algorytmy decyzyjne}{14}
+\contentsline {section}{\numberline {3.2}Podzia\IeC {\l } algorytm\IeC {\'o}w sterowania ze wzgl\IeC {\k e}du na zastosowane algorytmy decyzyjne}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Aktualne badania}{15}
+\contentsline {chapter}{\numberline {4}Aktualne badania}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Zintegrowane systemy pozycjonowania w czasie rzeczywistym}{15}
+\contentsline {section}{\numberline {4.1}Zintegrowane systemy pozycjonowania w czasie rzeczywistym}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Zastosowanie GNSS w precyzyjnym nawo\IeC {\.z}eniu gleby}{15}
+\contentsline {subsection}{\numberline {4.1.1}Zastosowanie GNSS w precyzyjnym nawo\IeC {\.z}eniu gleby}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Algorytmy wyznaczania pozycji oparte na filtrze Kalmana}{16}
+\contentsline {subsection}{\numberline {4.1.2}Algorytmy wyznaczania pozycji oparte na filtrze Kalmana}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Spegcjalistyczne opracowanie obserwacji - postprocessing}{18}
+\contentsline {section}{\numberline {4.2}Spegcjalistyczne opracowanie obserwacji - postprocessing}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Inne zastosowania GNSS w rolnictwie precyzyjnym}{19}
+\contentsline {section}{\numberline {4.3}Inne zastosowania GNSS w rolnictwie precyzyjnym}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Analiza rynku}{20}
+\contentsline {chapter}{\numberline {5}Analiza rynku}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Wykorzystanie GNSS}{20}
+\contentsline {section}{\numberline {5.1}Wykorzystanie GNSS}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Zastosowanie system\IeC {\'o}w inercjalnych}{22}
+\contentsline {section}{\numberline {5.2}Zastosowanie system\IeC {\'o}w inercjalnych}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Zastosowanie sensor\IeC {\'o}w video}{23}
+\contentsline {section}{\numberline {5.3}Zastosowanie sensor\IeC {\'o}w video}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Perspektywy rozwoju oraz wnioski}{25}
+\contentsline {chapter}{\numberline {6}Perspektywy rozwoju oraz wnioski}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}p}{25}
+\contentsline {section}{\numberline {6.1}p}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}w}{25}
+\contentsline {section}{\numberline {6.2}w}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Dodatek}{26}
+\contentsline {chapter}{\numberline {A}Dodatek}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}VLBI}{26}
+\contentsline {section}{\numberline {A.1}VLBI}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}DORIS}{27}
+\contentsline {section}{\numberline {A.2}DORIS}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}SLR}{29}
+\contentsline {section}{\numberline {A.3}SLR}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}LLR}{29}
+\contentsline {section}{\numberline {A.4}LLR}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad w rozw\IeC {\'o}j \IeC {\'s}wiatowej geodezji i nawigacji}{29}
+\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad w rozw\IeC {\'o}j \IeC {\'s}wiatowej geodezji i nawigacji}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{33}
+\contentsline {chapter}{Bibliografia}{35}

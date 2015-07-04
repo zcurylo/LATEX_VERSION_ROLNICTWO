@@ -1,16 +1,16 @@
 [0] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'praca_dyplomowa.blg'
-[72] biber:277> INFO - === Fri Jul  3, 2015, 22:36:04
-[72] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
-[216] Biber.pm:635> INFO - Found 33 citekeys in bib section 0
+[69] biber:277> INFO - === Sat Jul  4, 2015, 20:57:15
+[70] Biber.pm:333> INFO - Reading 'praca_dyplomowa.bcf'
+[213] Biber.pm:635> INFO - Found 35 citekeys in bib section 0
 [258] Biber.pm:3051> INFO - Processing section 0
-[293] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[294] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
 [298] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[304] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[389] Utils.pm:144> WARN - The field 'url' in entry 'TRIMBLE' cannot be null, deleting it
-[1085] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1085] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1087] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
-[1353] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
-[1361] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
-[1361] Biber.pm:106> INFO - WARNINGS: 1
+[305] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[401] Utils.pm:144> WARN - The field 'url' in entry 'TRIMBLE' cannot be null, deleting it
+[1142] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1143] UCollate.pm:66> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1143] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'pl-PL'
+[1411] bbl.pm:517> INFO - Writing 'praca_dyplomowa.bbl' with encoding 'UTF-8'
+[1419] bbl.pm:606> INFO - Output to praca_dyplomowa.bbl
+[1420] Biber.pm:106> INFO - WARNINGS: 1

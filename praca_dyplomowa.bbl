@@ -205,6 +205,30 @@
       \field{year}{2013}
       \field{pages}{7\bibrangedash 9}
     \endentry
+    \entry{automation_in_agriculture}{incollection}{}
+      \name{labelname}{3}{}{%
+        {{hash=a8d1b47fb3df858532202719372e6f64}{Edan}{E\bibinitperiod}{Yael}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=f9643608530faada46375ad351f7680c}{Han}{H\bibinitperiod}{Shufeng}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=489c43186402df50e25c3276fe0006eb}{Kondo}{K\bibinitperiod}{Naoshi}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=a8d1b47fb3df858532202719372e6f64}{Edan}{E\bibinitperiod}{Yael}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=f9643608530faada46375ad351f7680c}{Han}{H\bibinitperiod}{Shufeng}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=489c43186402df50e25c3276fe0006eb}{Kondo}{K\bibinitperiod}{Naoshi}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7ae400e17283d0e03e21d014241c74d6}
+      \strng{fullhash}{7ae400e17283d0e03e21d014241c74d6}
+      \field{sortinit}{E}
+      \field{sortinithash}{655e26c7438ff123e5c69c6c3f702107}
+      \field{labeltitle}{Automation in agriculture}
+      \field{booktitle}{Springer handbook of automation}
+      \field{title}{Automation in agriculture}
+      \field{year}{2009}
+      \field{pages}{1095\bibrangedash 1128}
+    \endentry
     \entry{glonass_geoforum}{online}{}
       \name{labelname}{1}{}{%
         {{hash=61150e8b0fefdcfa1db9e493d80f868b}{geoforum.pl}{g\bibinitperiod}{}{}{}{}{}{}}%
@@ -761,6 +785,38 @@
       \field{title}{Development of Intelligent Equipments for Precision Agriculture}
       \field{year}{2008}
       \field{pages}{951\bibrangedash 958}
+    \endentry
+    \entry{feed_forward_back}{article}{}
+      \name{labelname}{6}{}{%
+        {{hash=8b8f3bd5b68cc68364b9884aea787c54}{Zhu}{Z\bibinitperiod}{Zhong-xiang}{Z\bibinithyphendelim x\bibinitperiod}{}{}{}{}}%
+        {{hash=af06704764d8034ca33edc1493e66b7b}{Chen}{C\bibinitperiod}{Jun}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=dfd9167d0de8076ca9243fc3ea523f4c}{Yoshida}{Y\bibinitperiod}{Toyofumi}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=5cc30f619a8a588c14ca1e6a70843f9e}{Torisu}{T\bibinitperiod}{Ryo}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=657d246f2f13f1031dbdaa3060960d07}{Song}{S\bibinitperiod}{Zheng-he}{Z\bibinithyphendelim h\bibinitperiod}{}{}{}{}}%
+        {{hash=c0989740be6cc44250bbb0cd6f3fdbb5}{Mao}{M\bibinitperiod}{En-rong}{E\bibinithyphendelim r\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=8b8f3bd5b68cc68364b9884aea787c54}{Zhu}{Z\bibinitperiod}{Zhong-xiang}{Z\bibinithyphendelim x\bibinitperiod}{}{}{}{}}%
+        {{hash=af06704764d8034ca33edc1493e66b7b}{Chen}{C\bibinitperiod}{Jun}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=dfd9167d0de8076ca9243fc3ea523f4c}{Yoshida}{Y\bibinitperiod}{Toyofumi}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=5cc30f619a8a588c14ca1e6a70843f9e}{Torisu}{T\bibinitperiod}{Ryo}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=657d246f2f13f1031dbdaa3060960d07}{Song}{S\bibinitperiod}{Zheng-he}{Z\bibinithyphendelim h\bibinitperiod}{}{}{}{}}%
+        {{hash=c0989740be6cc44250bbb0cd6f3fdbb5}{Mao}{M\bibinitperiod}{En-rong}{E\bibinithyphendelim r\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{aea7e8dfb50114cc9f98abedfad6a05e}
+      \strng{fullhash}{aabd0f4b395778e24edbee4e8c39a0e5}
+      \field{sortinit}{Z}
+      \field{sortinithash}{9cca09897f0dfd9ed260e065f6d82cd6}
+      \field{labeltitle}{Path tracking control of autonomous agricultural mobile robots}
+      \field{journaltitle}{Journal of Zhejiang University SCIENCE A}
+      \field{number}{10}
+      \field{title}{Path tracking control of autonomous agricultural mobile robots}
+      \field{volume}{8}
+      \field{year}{2007}
+      \field{pages}{1596\bibrangedash 1603}
     \endentry
   \endsortlist
 \endrefsection

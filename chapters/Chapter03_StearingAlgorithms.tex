@@ -1,11 +1,25 @@
 W pracy założono, że pojazdy rolnicze w przybliżeniu są bryłami sztywnymi.
 Obiekty te charakteryzują się w przestrzeni trójwymiarowej sześcioma stopniami swobody.
 Jednym ze sposobów matematycznego opisu położenia tychże pojazdów w przestrzeni trójwymiarowej,
-jest podanie współrzędnych środka ciężkości (x,y,z) oraz trzech parametrów kątowych: azymutu, odchylenia od poziomu w płaszczyźnie poprzecznej oraz podłużnej.
-W dalszej części rozdziału opisano kilka przykładowych rozwiązań algorytmów sterowania,które charakterytzują się różnym podejściem 
+jest podanie współrzędnych środka ciężkości (x,y,z) oraz trzech parametrów kątowych: azymutu, odchylenia od poziomu w płaszczyźnie poprzecznej oraz podłużnej.\\
+\indent Rysunek \ref{fig:general_scheme} przedstawia typowy schemat systemu automatycznego prowadzenia pojazdów. Sprzęt komputerowy najczęściej składa się z 
+odbiornika GNSS bądź innego narzędzia do wyznaczania absolutnej pozycji, sensora mierzącego aktualny kąt skrętu kół pojazdu oraz hydrauliki uaktualniającej kierunek kół.
+Na oprogramowanie składają się: moduł planowania tras, moduł obliczający pożądane zmienne sterujące na podstawie porównania aktualnej pozycji z pozycją teoretyczną,
+moduł sterujący, który oblicza sygnał sterujący na podstawie porównania zmierzonych oraz pożądanych zmiennych sterujących i wysyła go do hydrauliki uaktualniającej
+\cite[][strona 1097]{automation_in_agriculture}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{ch3_general_scheme.eps}
+\caption{\textit{Komponenty typowego systemu automatycznego prowadzenia}\\
+źródło: \cite[][strona 1097]{automation_in_agriculture}}
+\label{fig:general_scheme}
+\end{figure}
+
+\indent W dalszej części rozdziału opisano kilka przykładowych rozwiązań algorytmów sterowania,które charakterytzują się różnym podejściem 
 w odniesieniu do parametrów kątowych określania orientacji przestrzennej pojazdów rolniczych. 
 \section{Podział algorytmów sterowania ze względu na dostarczane dane wejściowe}
-Jednym z najbardziej popularnych zbiorów parametrów nawigacyjnych, które są następnie wysyłane do algorytmów sterowania, jest para:
+Jednym z najbardziej popularnych zbiorów parametrów nawigacyjnych oliczanych jako pożądane zmienne sterujące, które są następnie wysyłane do modułów sterowania, jest para:
 azymut plus offset obliczane względem zadanej trasy. Azymut jest to kąt którego ramionami są:
 główna oś symetrii pojazdu oraz styczna do krzywej prowadzenia w punkcie, który stanowi rzut prostopadły środka ciężkości na tą krzywą.
 Offset natomiast jest to odległość środka ciężkości pojazdu względem zadanej ścieżki \cite{CCTA_769_775}.
@@ -13,7 +27,7 @@ Na rysunku nr \ref{fig:ch3_azymutOffset} przedstawione są powyższe parametry. 
 azymut pojazdu względem zadanej źcieżki oznaczono jako $\psi$. $\delta$ oznacza kąt sterujący jako wynik przetwarzania algorytmu sterującego tzw. Target Angle.    
 \begin{figure}[H] 
 \centering
-\includegraphics[scale=0.5]{ch3_azymutOffset.eps}
+\includegraphics[scale=1.0]{ch3_azymutOffset.eps}
 \caption{\textit{Azymut oraz offset - Parametry najczęściej używane w celu wyznaczenia pozycji względem zadanej trasy;}
 źródło: \cite[][strona 464]{CCTA5_461_469}}
 \label{fig:ch3_azymutOffset}
@@ -23,8 +37,8 @@ W przypadku niskiej dokładności parametrów nawigacyjnych autorzy publikacji \
 zaproponowali algorytm, który korzysta tylko z obliczanego w czasie rzeczywistym offsetu.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{ch3_currentNextTargetPosition.eps}
-\caption{\textit{Tylko offset - w przypadku niskiej jakości danych wejściowych;} 
+\includegraphics[scale=1.0]{ch3_currentNextTargetPosition.eps}
+\caption{\textit{Tylko offset - w przypadku niskiej jakości danych wejściowych;}\\
 	źródło: \cite[][strona 947]{CCTA_943_950}}
 \label{fig:ch3_currentNextTargetPosition}
 \end{figure}
@@ -55,15 +69,10 @@ poślizgu w płaszczyznach: poprzecznej oraz podłużnej.
 
 \section{Podział algorytmów sterowania ze względu na zastosowane algorytmy decyzyjne}
 Różnego rodzaju algorytmy sterowania są używane w celu kompencacji zmiennej dynamiki pojazdów oraz w celu osiągnięcia satysfakcjonującej wydajności sterowania
- \cite[][strona 770]{CCTA_769_775}. Poniżej znajdują się przykłady kilku najbardziej popularnych algorytmów prowadzenia pojazdów.
-
-\begin{wrapfigure}[15]{o}[20pt]{8cm}
-	\centering
-	\includegraphics[scale = 0.9]{ch3_MHE_NMPC_estimation.eps}
-	\caption{\textit{Schemat blokowy zaawansowanego algorytmu prowadzenia pojazdu dostosowanego do występowania poślizgu kół.}
-	źródło \cite[][strona 30]{KRAUS}}
-	\label{fig:MHE_NMPC_diagram}
-\end{wrapfigure}
+ \cite[][strona 770]{CCTA_769_775}. Kilka kontrolerów zostało zaadaptowanych na potrzeby prowadzenia maszyn w rolnictwie precyzyjnym. Między innymi: 
+Regulator proporcjonalno - całkująco różniczkujący PID\footnote{Proportional - Integral - Derivative controller}, wersja regulatora PID ze sprzężeniem zwrotnym\footnote
+{feedback PID controller} oraz z predykcją\footnote{feedforward PID controller}, algorytmy logiki rozmytej oraz wiele innych \cite[][strona 1099]{automation_in_agriculture}.
+Poniżej podano kilka przykładów wykorzystania różnych algortymów sterowania w rolnictwie.\\
 \indent W pracy \cite[]{KRAUS} Tom Kraus wraz z współpracownikami opisali zaawansowany matematycznie algorytm wyznaczania parametrów prowadzenia 
 ciągnika rolniczego - zmiany kąta sterowania oraz prędkości kątowej kół pojazdu, przy użyciu estymacji z przesówanym oknem czasowym (MHE\footnote{
 Moving Horizon Estimation}) oraz nieliniowym modelem predykcyjnego sterowania (NMPC\footnote{Nonlinear Model Predictive Control}).
@@ -73,4 +82,33 @@ prowadzenia pojazdu \cite[][strona 30]{KRAUS}. Rysunek \ref{fig:MHE_NMPC_diagram
 Sterowanie predykcyjne z przesówanym oknem czasowym, polega na cyklicznym rozwiązywaniu zadania sterowania optymalnego, z warunkiem początkowym 
 równym aktualnej estymacie stanu obiektu \cite[][strona 2]{BANIA}. Predykcja przyszłych stanów obiektu sterowanego na podstawie nieliniowych równań różniczkowych jest możliwa 
 tylko w stosunkowo krótkim oknie czasowym przyjmowanym arbitralnie - stąd nazwa metody.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.9]{ch3_MHE_NMPC_estimation.eps}
+	\caption{\textit{Schemat blokowy zaawansowanego algorytmu prowadzenia pojazdu dostosowanego do występowania poślizgu kół.}
+	źródło \cite[][strona 30]{KRAUS}}
+	\label{fig:MHE_NMPC_diagram}
+\end{figure}
+
+\indent W artykule \cite[]{feed_forward_back} Zhong-xiang Zhu oraz współpracownicy wykorzystali regulator proporcjonalno całkująco różniczkujący PID 
+w obu wersjach zarówno ze sprzężeniem zwrotnym jak i z predykcją do znajdowania odpowiedniego kąta sterującego ciągnikiem rolniczym.
+Podobnie jak w poprzedniej pracy powyżej, do opisu dynamiki pojazdu posłużono się modelem kinematycznym z uproszczonym podejściem jednoosiowym.
+Kąt sterujący ${\alpha}_c$ obliczano jako sumę wartości predykowanej na podstawie teoretycznej trasy - wersja feedforward algorytmu PID, oraz korekty wynikającej 
+z aktualnego połorzenia ciągnika - wersja ze sprzężeniem zwrotnym \cite[][strona 1599]{feed_forward_back}. 
+\begin{equation}
+	{\alpha}_c = {\alpha}_i^* + \delta\alpha
+\end{equation}
+Gdzie kąt ${\alpha}_{i}^{*}$ oznacza optymalny kąt sterujący wynikający z referencyjnego kursu, a $\delta\alpha$ jest poprawką obliczaną przez algorytm 
+PID ze sprzężeniem zwrotnym na podstawie aktualnego azymutu pojazdu $\theta$ oraz offsetu $\delta\text{y}$, patrz rysunek \ref{fig:both_forward_back} poniżej.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[scale = 1.0]{ch3_feedforward_plus_feedback.eps}
+        \caption{\textit{Rysunek obrazujący model położenia pojazdu w świetle ścieżki referencyjnej}\\
+        źródło \cite[][strona 1598]{feed_forward_back}}
+        \label{fig:both_forward_back}
+\end{figure}
+Według autorów opracowania dokładność powyższego rozwiązania wyniosła średnio około $\pm$9cm na poziomie ufności 65\% \cite[][strona 1602]{feed_forward_back}.
+Na koniec warto zauważyć, że w rozwiązaniu do wyznaczania azymutu pojazdu wykorzystano żyroskop światłowodowy o wysokiej dokładności (dryft $\pm$1.5\degree/h).
+Zapewne dlatego otrzymano tak dobrą dokładność finalnego rozwiązania.
 
