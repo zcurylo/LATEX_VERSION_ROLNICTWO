@@ -125,6 +125,25 @@
       \verb http://orchid.cbk.poznan.pl/
       \endverb
     \endentry
+    \entry{BOSY_2005}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=900b65ff7c62b35e6998f2077374faf4}{Bosy}{B\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=900b65ff7c62b35e6998f2077374faf4}{Bosy}{B\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wydawnictwo Akademii Rolniczej we Wroclawiu}%
+      }
+      \strng{namehash}{900b65ff7c62b35e6998f2077374faf4}
+      \strng{fullhash}{900b65ff7c62b35e6998f2077374faf4}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labeltitle}{Precise processing of satellite GPS observations in local networks located in mountain areas}
+      \field{journaltitle}{Zeszyty Naukowe Akademii Rolniczej we Wroclawiu. Rozprawy (Poland)}
+      \field{title}{Precise processing of satellite GPS observations in local networks located in mountain areas}
+      \field{year}{2005}
+    \endentry
     \entry{PA_RemoteIrrigation}{article}{}
       \name{labelname}{6}{}{%
         {{hash=b8ba9e8d4f672b16f7063306d9a4d2df}{Ch{á}vez}{C\bibinitperiod}{Jos{é}\bibnamedelima L}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%

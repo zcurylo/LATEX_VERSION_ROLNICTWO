@@ -304,7 +304,41 @@ Pasmo częstotliwości E5 jest nośnikiem czterech sygnałów. W pasmach E5a ora
 \label{fig:galileo_freq}
 \end{figure}
 \section{Algorytmy Pozycjonowania}
-
+Algorytmy pozycjonowania w nawigacji satelitarnej opierają się głównie na dwóch typach obserwacji: 
+\begin{itemize}
+	\item pomiarze czasu propagacji sygnału od satelity do odbiornika - obserwacje kodowe
+	\item obserwacje fazowe - obliczane jako różnice fazy fali radiowej docierającej od satelity do odbiornika oraz fazy sygnału referencyjnego 
+	generowanego w odbiorniku (chwilowa faza wypadkowego sygnału). Od momentu (epoka $t_0$) rozpoczęcia śledzenia sygnału wypadkowego o tzw. częstotliwości dudnienia,
+	zliczana jest również przez odbiornik całkowita liczba jego pełnych cykli fazowych.
+\end{itemize}
+\indent Równanie obserwacji kodowych tzw. równanie psełdoodległości oparte jest na różnicy momentów czasu emisji $t^s$ oraz odbioru $t_r$ sygnału, pomnożonej 
+przez prędkość światła $c$ \cite[][strona 11]{BOSY_2005}. Wyraża się następującą zależnością (na podstawie \cite[]{BOSY_2005}):
+\begin{equation}
+	R_r^s = (t_r - t^s)c = \rho_r^s + c({\delta}t_r - {\delta}t^s) + {\delta}T_r^s + {\delta}I_r^s + {\delta}_r^s + \epsilon
+	\label{eq:code_general}
+\end{equation}
+Gdzie:
+$t^s$, $t_r$ - oznaczają odpowiednio momenty wysłania i odbioru sygnału GNSS $\big[s\big]$,\newline
+${\delta}t^s$, ${\delta}t_r$ - oznaczaja odpowiednio błąd zegara satelity i odbiornika $\big[s\big]$,\newline
+$c$ - prędkość światła w próżni $\big[\frac{m}{s}\big]$,\newline
+$\rho_r^s$ - stanowi odległość geometryczną między satelitą a odbiornikiem $\big[m\big]$,\newline
+${\delta}T_r^s$ - opóźnienie spowodowane refrakcją troposferyczną $\big[m\big]$,\newline
+${\delta}I_r^s$ - opóźnienie spowodowane refrakcją jonosferyczną $\big[m\big]$,\newline
+${\delta}_r^s$ - czynnik reprezentujący błędy systematyczne satelity i odbiornika $\big[m\big]$,\newline
+$\epsilon$ - stanowi błędy przypadkowe o rozkładzie normalnym $\big[m\big]$,\newline
+W równaniu \ref{eq:code_general} występują cztery niewiadome: ${\delta}t_r$ - błąd zegara odbiornika oraz występujące w równaniu odległości geometrycznej\footnote{
+${\rho}_r^s = \sqrt[2]{{\big(X^s - X_r\big)}^2 + {\big(Y^s - Y_r\big)}^2 + {\big(Z^s - Z_r\big)}^2}$}
+współrzędne odbiornika $\big(X_r, Y_r, Z_r\big)$. Dlatego do określenia pozycji potrzebne jest wykonanie symultanicznie obserwacji do 
+minimum czterech satelitów. Współrzędne satelity $\big(X^s, Y^s, Z^s\big)$ na epokę $t^s$ oraz błąd jej zegara ${\delta}t^s$ są w 
+przybliżeniu określane na podstawie danych znajdujących się w depeszy nawigacyjnej \cite[][strona 11]{BOSY_2005}.
+Źródła błędów spowodowane propagacją sygnału w atmosferze (${\delta}T_r^s$, ${\delta}I_r^s$), błędy systematyczne oraz sposoby ich eliminacji 
+zostaną omówione i porównane wspólnie dla obserwacji kodowych oraz fazowych w dalszej części tego podrozdziału. Warto jedynie zaznaczyć, że wpływ jonosfery\footnote{
+Jonosfera w przybliżeniu obejmuje warstwy atmosfery znajdujące się między wysokościami $h_1 = 50km$ oraz $h_2 = 1000km$. Jest ośrodkiem dyspersyjnym (propagacja 
+fali zależy od jej częstotliwości) w stosunku do sygnałów radiowych GNSS.} 
+na obserwacje kodowe powoduje zmniejszenie szybkości grupowej propagacji fali elektromagnetycznej $v_{gr}$ (rozumianej jako prędkość rozchodzenia się czoła fali), a 
+w związku z tym mierzone psełdoodległości obarczone jej wpływem są zawsze zbyt długie. Wpływ troposfery również powoduje nadmiarowość w zmierzonej psełdoodległości.  
+Określanie pozycji anteny odbiornika na podstawie obserwacji kodowych stanowi podstawę rozwiązań nie wymagających dużej dokładności.\newline
+\indent 
 	\subsection{DGPS/DGNSS}
 	\subsection{RTK}
 	\subsection{PPP}
