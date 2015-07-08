@@ -320,7 +320,7 @@ przez prędkość światła $c$ \cite[][strona 11]{BOSY_2005}. Wyraża się nast
 Gdzie:
 $t^s$, $t_r$ - oznaczają odpowiednio momenty wysłania i odbioru sygnału GNSS $\big[s\big]$,\newline
 ${\delta}t^s$, ${\delta}t_r$ - oznaczaja odpowiednio błąd zegara satelity i odbiornika $\big[s\big]$,\newline
-$c$ - prędkość światła w próżni $\big[\frac{m}{s}\big]$,\newline
+$c$ - prędkość światła w próżni równą 299 792 458 $\big[\frac{m}{s}\big]$,\newline
 $\rho_r^s$ - stanowi odległość geometryczną między satelitą a odbiornikiem $\big[m\big]$,\newline
 ${\delta}T_r^s$ - opóźnienie spowodowane refrakcją troposferyczną $\big[m\big]$,\newline
 ${\delta}I_r^s$ - opóźnienie spowodowane refrakcją jonosferyczną $\big[m\big]$,\newline
@@ -338,7 +338,79 @@ fali zależy od jej częstotliwości) w stosunku do sygnałów radiowych GNSS.}
 na obserwacje kodowe powoduje zmniejszenie szybkości grupowej propagacji fali elektromagnetycznej $v_{gr}$ (rozumianej jako prędkość rozchodzenia się czoła fali), a 
 w związku z tym mierzone psełdoodległości obarczone jej wpływem są zawsze zbyt długie. Wpływ troposfery również powoduje nadmiarowość w zmierzonej psełdoodległości.  
 Określanie pozycji anteny odbiornika na podstawie obserwacji kodowych stanowi podstawę rozwiązań nie wymagających dużej dokładności.\newline
-\indent 
+\indent W pracy \cite[]{hofmann_gnss} profesor Bernard Hofmann opisał szczegółowo zasadę pomiarów fazowych, włącznie z wyprowadzeniem równania tychże obserwacji.
+Przy załorzeniu zaniedbywalnych odchyleń częstotliwości sygnałów satelity oraz odbiornika od częstotliwości nominalnej,
+faza sygnału referencyjnego generowanego przez odbiornik wyraża się równaniem \ref{eq:generated_phase},
+a faza sygnału odebranego od satelity i zrekonstruowanego równaniem \ref{eq:received_phase}. Obie częstotliwości są Wyrażone jako liczby rzeczywiste (cykle fazowe).
+\begin{equation}
+	{\varphi}_r(t) = ft + f{\delta}t_r
+	\label{eq:generated_phase}	
+\end{equation}
+\begin{equation}
+	{\varphi}^s(t) = ft - f\frac{\rho_r^s}{c} + f{\delta}t^s
+	\label{eq:received_phase}
+\end{equation}
+Gdzie: 
+$f$ - oznacza częstotliwość sygnału $\big[Hz\big]$,\newline
+$t$ - oznacza epokę w referencyjnym zarówno dla zegara satelity jak i odbiornika czasie systemu GNSS satelity $\big[s\big]$,\newline
+${\delta}t_r$ - stanowi błąd zegara odbiornika $\big[s\big]$,\newline
+${\delta}t^s$ - stanowi błąd zegara satelity $\big[s\big]$,\newline
+$c$ - oznacza prędkość światła w próżni równą 299 792 458 $\big[\frac{m}{s}\big]$,\newline
+$\rho_r^s$ - stanowi odległość geometryczną między satelitą a odbiornikiem.\newline
+Odbiornik porównuje sygnał, który dociera do niego od satelity z wygenerowanym przez siebie sygnałem referencyjnym tworząc ich różnicę - tzw sygnał dudnienia.
+Faza wypadkowego sygnału jest wyrażona równaniem \ref{eq:beat_phase}, na podstawie \cite[][strona 106]{hofmann_gnss}.
+\begin{equation}
+	{\varphi}_r^s(t) = {\varphi}^s(t) - {\varphi}_r(t) = - f\frac{\rho_r^s}{c} - f\big({\delta}t_r - {\delta}t^s\big)
+	\label{eq:beat_phase}
+\end{equation}
+Kiedy włączamy odbiornik (epoka $t_0$) chwilowa część fazy dudnienia jest mierzona przez odbiornik. Początkowa liczba całkowitych cykli fazowych $N_r^s$ pomiędzy satelitą 
+a odbiornikien jest nieznana. Jeżeli jednak żadna przeszkoda terenowa\footnote{lub inne niechciane zdarzenia} nie przerwie śledzenia sygnału satelity przez odbiornik,
+i nie wystąpi efekt znany w literaturze jako cycle-slip\footnote{cycle-slip - utrata przez odbiornik pewnej liczby cykli fazowych}, zatem liczba całkowita $N_r^s$
+tzw. nieoznaczoność pozostaje stała i opisywaną wcześniej fazę dudnienia można wyrazić za pomocą poniższego równania \ref{eq:receiver_beat_phase}
+\cite[][strona 107]{hofmann_gnss}.
+\begin{equation}
+	{\varphi}_r^s(t) = \Delta{\varphi}_r^s\big|_{t_0}^{t} + N_r^s
+	\label{eq:receiver_beat_phase}
+\end{equation}
+W powyższym równaniu $\Delta{\varphi}_r^s\big|_{t_0}^{t}$ oznacza pomierzoną przez odbiornik w chwili $t$ fazę sygnału satelitarnego, plus całkowitą liczbę cykli 
+fazowych zliczaną przez odbiornik od momentu $t_0$ \cite[][strona 107]{hofmann_gnss}.
+Geometryczną interpretację równania \ref{eq:receiver_beat_phase} przedstawia poniższy rysunek \ref{fig:receiver_beat_phase}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.0]{ch2_measured_beat_phase.eps}
+\caption{\textit{Geometryczna interpretacja obserwacji fazowych} źródło: \cite[][strona 108]{hofmann_gnss}}
+\label{fig:receiver_beat_phase}
+\end{figure}
+Jeżeli podstawimy wyrażenie \ref{eq:receiver_beat_phase} do równania \ref{eq:beat_phase} oraz skorzystamy z zależności $f\lambda = c$,
+otrzymamy następujące równanie \ref{eq:phase_pseldorange} fazowej psełdoodległości:
+\begin{equation}
+	\Phi = - \Delta{\varphi}_r^s\big|_{t_0}^{t} = \frac{\rho_r^s}{\lambda} + \frac{c}{\lambda} \big({\delta}t_r - {\delta}t^s\big) + N_r^s
+	\label{eq:phase_pseldorange}
+\end{equation}
+Po pomnożeniu obu stron powyższego równania \ref{eq:phase_pseldorange} przez długość fali $\lambda$ oraz wprowadzjąc dodatkowe parametry opisujące wpływ błędów 
+systematycznych oraz przypadkowych, otrzymujemy równanie \ref{eq:final_phase_equation} opisujące obserwacje fazowe w dziedzinie odległości ($[m]$).
+Ze względu na charakter niniejszej pracy w równaniu uwzględniono tylko najważniejsze z opisanych w dalszej części błędów systematycznych.
+\begin{equation}
+	\lambda\Phi = \rho_r^s + c\big({\delta}t_r - {\delta}t^s\big) + {\lambda}N_r^s + {\delta}T_r^s 
+	- {\delta}I_r^s + \epsilon
+	\label{final_phase_equation}
+\end{equation}
+Występujące w powyższym równaniu nieoznaczoności $N_r^s$ są arbitralnymi liczbami całkowitymi unikalnymi dla każdego śledzonego przez odbiornik satelity.
+Istnieją specjalne algorytmy pozwalające na estymowanie nieoznaczoności w dziedzinie liczb całkowitych, a tym samym na wyznaczanie pozycji anteny odbiornika
+z bardzo wysoką dokładnościąrzędu centymetrów a w przypadku pomiarów statycznych nawet milimetrów.
+Najczęściej jednak czas potrzebny na tzw. uzyskanie zbierzności rozwiązania jest 
+dłuższy niż 15 minut w pomiarach absolutnych (PPP). W przypadku pomiarów różnicowych (RTK) korzystających z dwóch częstotliwości sygnału GNSS czas potrzebny 
+na estymację nieoznaczoności w dziedzinie liczb całkowitych to średnio kilkadziesiąt sekund.\newline
+\indent Błędy występujące w obserwacjach GNSS zarówno kodowych jak i fazowych dzielą się na przypadkowe, których nie można wyeliminować oraz na 
+systematyczne, których wpływ można wyeliminować zupełnie lub w dużej mierze zredukować \cite[][strona]{hofmann_gnss}.
+Źródła tych ostatnich dzielą się na trzy główne grupy \cite[][strona 109]{hofmann_gnss}:
+\begin{itemize}
+	\item Błędy związane z satelitami, takie jak błąd zegara oraz niedokładność orbity satelity.
+	\item Błedy propagacji sygnału w atmosferze. Głównie refrakcja jonosferyczna oraz troposferyczna.
+	\item Błedy odbiornika, do których należy błąd zegara, błąd położenia centrum fazowego anteny oraz błąd wielodrożności. 
+\end{itemize}
+
 	\subsection{DGPS/DGNSS}
 	\subsection{RTK}
 	\subsection{PPP}
