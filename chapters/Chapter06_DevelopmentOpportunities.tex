@@ -1,13 +1,52 @@
 \section{Perspektywy rozwoju}
-Nadzieje związane z systemem GALILEO\\
-\indent Dynamiczny rozwój elektronicznych sensorów ruchu\\
-\indent Wykorzystanie systemu naziemnych stacji referencyjnych ASG-EUPOS
-Dlaczego wciąż potrzebujemy local augmentation systems:
-Bo jest duże opóźnienie w dostępie do precyzyjnych produktów IGS takich jak orbity i parametry zegara,
-a wyznaczenia rapid są zbyt mało dokładne \cite[][strona 215]{ggos}\\
-\indent modernizacja juz istniejacych systemow
-wielka nadzieja z sygnałem L5 GPS.
+W dzisiejszych czasach nie jest możliwe wyobrażenie sobie rolnictwa precyzyjnego bez dokładnie wyznaczanej pozycji przestrzennej maszyn,
+zatem rozwój tej nabierającej obecnie coraz większego znaczenia dziedziny rolnictwa upatruje się w rozwoju szeroko pojętej nawigacji.
+Wielkie nadzieje wiąże się zatem z ukończeniem budowy i osiągnięciem pełni operacyjności nowych systemów nawigacji satelitarnej - GALILEO oraz modernizacją 
+systemów już istniejących - GPS, GLONASS. 
+W pełni operacyjny system GALILEO w załorzeniach ma zapewnić minimum sześć satelitów widocznych globalnie powyżej 10\degree nad horyzontem. Co będzie stanowiło 
+wzrost w liczbie dostępnych satelitów na poziomie ponad 50\%. Większa liczba widocznych satelitów to więcej obserwacji, z zatem z czysto statystycznego punktu 
+widzenia większa dokładność wyznaczanej pozycji zwłaszcza w trudnych warunkach terenowych jak lasy czy zadrzewienia śródpolne. Ponadto satelity systemu GALILEO 
+będą emitować sygnały modulowane w trzech pasmach częstotliwości radiowych, co pozwoli za pomocą odpowiednich kombinacji liniowych zarówno w przypadku obserwacji fazowych
+jak i kodowych na jeszcze skuteczniejszą eliminację wpływu refrekcji jonosferycznej. Dodatkowy system to także lepsza możliwość wykrywania nieprawidłowości 
+w danych GNSS oraz wszelkiego rodzaju awarii przez co zwiekszona będzie niezawodność oraz odporność na zakłócenia rozwiązania nawigacyjnego.
+Modernizacja operacyjnych obecnie systemów GPS oraz GLONASS w postaci wyniesienia na orbitę satelitów odpowiednio typów IIF oraz III dla GPS oraz trzeciej generacji 
+w przypadku systemu GLONASS, również zwiększy moc oraz jakość ich sygnałów. Ponadto w załorzeniach oba systemy również wprowadzą trzecie pasmo częstotliwości 
+odpowiednio L5\footnote{Trzecia częstotliwość modulacji sygnału GPS jest już dostępna eksperymentalnie od kwietnia roku 2014} oraz G3, które podobnie jak w przypadku GALILEO
+zwiększy możliwości eliminacji niekorzystnego wpływu refrakcji jonosferycznej z obserwacji. W ogólności wprowadzenie trzeciego pasma częstotliwości umożliwi odpowiednie 
+kombinacje liniowe obserwacji charakteryzujące się znacznie dłuższą wypadkową długością fali, co przyczyni się do szybszego\footnote{
+zmniejszy się czas (covergence time) potrzebny na uzyskanie stabilnego rowiązania} oraz dokładniejszego wyznaczania nieoznaczoności w precyzyjnych pomiarach absolutnych PPP.
+Z punktu widzenia rolnictwa precyzyjnego z powyższych rozważań najistotniejsza wydaje się poprawa dokładności zwłaszcza rozwiązań opartych na obserwacjach kodowych oraz 
+umożliwienie szybkiego znajdowania stabilnego roziązania nieoznaczoności w pomiarach absolutnych. Szacuje się, że samo wprowadzenie trzeciej częstotliwości umożliwi 
+uzyskiwanie submetrowej dokładności absolutnej pomiarów kodowych bez użycia systemów augmentacyjnych. Podsumowując powyższe rozwarzania, wzrost dokładności pozycjonowania 
+przyczyni się do lepszej jakości automatycznego prowadzenia maszyn rolniczych.\newline
+\indent Systemy GNSS wyznaczją pozycję w sensie abolutnym z określoną dokładnością, która jest w przybliżeniu stała w czasie. Dlatego znakomitym 
+uzupełnieniem absolutnego pozycjonowania GNSS jest korzystanie z sensorów elektronicznych takich jak żyroskopy i akcelerometry pozwalające na 
+pomiar przemieszczenia obiektów z bardzo wysoką dokładnością w krótkich odstępach czasowych\footnote{np. w czsie równym interwałowi otrzymywania rozwiązania z GNSS}
+względem znanej początkowej pozycji. Ponadto powyższe urządzenia pozwalają na wyznaczanie orientacji przestrzennej oraz jej zmian, tak bardzo potrzebne w celu 
+ustalania optymalnego kursu oraz kompensacji pozycji GNSS ze względu na nierówności terenu. Wykorzystanie narzędzi oraz technik nawigacji inercjalnej, które w połączeniu 
+z pozycjonowaniem absolutnym GNSS - tzw. fuzja danych pozwoli na znaczne ulepszenie dokładności prowadzenia maszyn rolniczych. Wobec powyższych słuszne zatem wydaje się 
+stwierdzenie, że algorytmy fuzji danych łączące dane z kilku źródeł pozycjonowania oparte na logice rozmytej bądź filtracji kalmana będą w przyszłości podstawą
+pozycjonowania w rolnictwie precyzyjnym. Podsumowując ten akapit warto dodać, że algorytmy fuzji danych wykorzystujące pomiary przemieszczenia obiektów na podstawie 
+sensorów inercjalnych, algorytmów przetwarzających obraz z kamer wideo umieszczonych na pojazdach, czy czujników zliczających obroty poszczególnych kół\footnote{
+Nawigacja zliczeniowa}, są w stanie zredukować błąd pozycji GNSS o co najmniej $\frac{2}{3}$. W takim wypadku jeżeli spojrzymy na przewidywane polepszenie dokładności 
+rozwiązania GNSS bazującego na obsewacjach kodowych otrzymamy dokładność absolutną na poziomie około 30cm i względną na poziomie kilku centymetrów. 
+Taka dokładność pozwalająca na wykonywanie wszystkich zabiegów agrotechnicznych z wyjątkiem tych wymagających centymetrowej dokładności jak np. sadzenie, osiągnięta 
+stosunkowo niewielkim kosztem\footnote{odbiorniki GNSS nie analizujące obserwacji fazowych są zregóły dużo tańsze} będzie zachęcała rolników do inwestowania 
+w narzędzia rolnictwa precyzyjnego a tym samym pośrednio wspierała jego rozwój.\newline
+\indent	Rozwój rolnictwa precyzyjnego nastąpi również pośrednio na podstawie postępu w naukach informatycznych oraz w elektronice. Możliwości 
+obliczeniowe komputerów oraz jakość i dokładność czujników elektronicznych, na których bazuje nawigacja inercjalna czy zliczeniowa podwaja się średnio co dwa lata\footnote{
+na podstawie empirycznego prawa Moore'a}. Ponieważ systemy prowadzenia maszyn relnictwa precyzyjnego są w znacznej mierze oparte na szeroko pojętej elektronice, zatem 
+rolnictwo precyzyjne również pośrednio na podstawie powyższego faktu wykona krok do przodu. Z powodu oczywistej inercji nie będzie to może ktok aż tak wielki ale jednak
+dostrzegalny.\newline
+\indent Przytoczone powyżej perspektywy rozwoju, zwłaszcza modernizacja oraz budowa systemów satelitarnych GNSS, z racji ich kosztowności będą wymagały 
+czasu. Zatem obecnie oraz w najbliższej przyszłości rozwój rolnictwa precyzyjnego wspierany będzie przez lokalne systemy augmentacyjne takie jak polska 
+aktywna sieć geodezyjna ASG-EUPOS, transmitujące dokładne poprawki sygnału GNSS: kodowe w technlogii DGPS oraz fazowe w technologii RTK.
+Na chwilę obecną w nawigacji satelitarnej a co za tym idzie również w rolnictwie precyzyjnym lokalne systemy augmentacyjne są niezbędne w celu osiągnięcia 
+centymetrowych dokładności międzyprzejazdowych. Maksymalne dokładności pozycjonowania absolutnego w czasie rzeczywistym za pomocą technologii PPP jakie możemy
+uzyskać dzisiaj są na poziomie decymetrowym. Dzieje się tak dlatego, że opuźnienia w dostępie do precyzyjnych produktów IGS, takich jak orbity i parametry 
+zegarów satelitów są niestety zbyt duże \cite[][strona 215]{ggos}.
 
 \section{Wnioski}
+Rozwój rolnictwa precyzyjnego będzie pośrednio oparty na 
 Zintegrowane systemy nawigacyjne integrujące obserwacje nawigacji satelitarnej GNSS, nawigacji intercjalnej INS oraz sensorów wideo, oparte na filtracji
 kalmana znacznie podnoszą dokładność pozycjonowania. Firmy nie wykorzystują jednak tej techniki w zastosowaniach komercyjnych.  

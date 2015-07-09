@@ -60,18 +60,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Perspektywy rozwoju}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Wnioski}{30}
+\contentsline {section}{\numberline {6.2}Wnioski}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Dodatek}{31}
+\contentsline {chapter}{\numberline {A}Dodatek}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}VLBI}{31}
+\contentsline {section}{\numberline {A.1}VLBI}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}DORIS}{32}
+\contentsline {section}{\numberline {A.2}DORIS}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}SLR}{34}
+\contentsline {section}{\numberline {A.3}SLR}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}LLR}{34}
+\contentsline {section}{\numberline {A.4}LLR}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad w rozw\IeC {\'o}j \IeC {\'s}wiatowej geodezji i nawigacji}{34}
+\contentsline {section}{\numberline {A.5}Polski wk\IeC {\l }ad w rozw\IeC {\'o}j \IeC {\'s}wiatowej geodezji i nawigacji}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{38}
+\contentsline {chapter}{Bibliografia}{39}
